@@ -1,0 +1,114 @@
+<svg width="934px" height="329px" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 933.58 328.12">
+  <defs>
+    <radialGradient id="9643c4d7-f0d9-46db-ba60-55d4c7d58adc" data-name="Безымянный градиент 5" cx="598.58" cy="211.04" r="128.22" gradientUnits="userSpaceOnUse">
+      <stop offset="0.6" stop-color="#47207c"/>
+      <stop offset="0.88" stop-color="#47207c"/>
+    </radialGradient>
+    <radialGradient id="8adba0a9-7ab8-449b-bb2c-0736171a6b79" cx="598.58" cy="288.84" r="117.73" xlink:href="#9643c4d7-f0d9-46db-ba60-55d4c7d58adc"/>
+    <radialGradient id="de18bbce-95eb-49e6-a492-fa9a8cd0189d" data-name="Безымянный градиент 10" cx="598.58" cy="268.81" r="115.21" gradientUnits="userSpaceOnUse">
+      <stop offset="0.6" stop-color="#270260"/>
+      <stop offset="0.88" stop-color="#47207c"/>
+    </radialGradient>
+    <linearGradient id="45b52715-5e2a-4ce3-a068-138ffe7f0db9" data-name="Безымянный градиент 14" x1="772.93" y1="57.04" x2="909.39" y2="57.04" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#ffc313"/>
+      <stop offset="1" stop-color="#d19e04"/>
+    </linearGradient>
+    <linearGradient id="c9b8fc28-e8fc-4998-9327-d5a031140965" x1="818.71" y1="198.49" x2="863.62" y2="198.49" xlink:href="#45b52715-5e2a-4ce3-a068-138ffe7f0db9"/>
+  </defs>
+  <title>gifts</title>
+  <g id="22ac6e9d-47e6-4410-b8c6-d932e7caeee6" data-name="&lt;Группа&gt;">
+    <g id="550d2b1c-99c1-4ca9-b6f0-ce1e73823e23" data-name="&lt;Группа&gt;">
+      <path id="0131eebc-1f08-44bd-b9b7-88b59a0ffc9a" data-name="&lt;Контур&gt;" d="M133.28,201.89c0-5-6-9.29-14.31-10.65,4.88-6.81,6.15-14.09,2.58-17.65s-10.84-2.3-17.65,2.58c-1.37-8.27-5.62-14.31-10.66-14.31s-9.29,6-10.65,14.31c-6.81-4.88-14.09-6.15-17.65-2.58s-2.3,10.83,2.58,17.65c-8.27,1.37-14.31,5.62-14.31,10.65s6,9.29,14.31,10.65c-4.88,6.81-6.15,14.09-2.58,17.65s10.84,2.3,17.65-2.58c1.36,8.27,5.61,14.31,10.65,14.31s9.29-6,10.66-14.31c6.81,4.88,14.09,6.15,17.65,2.58s2.3-10.84-2.58-17.65C127.24,211.18,133.28,206.93,133.28,201.89Z" style="fill: #f89712"/>
+      <rect id="05a768c0-aafc-421f-888f-7f64dd1160e1" data-name="&lt;Прямоугольник&gt;" y="210.67" width="186.5" height="54.52" style="fill: #815384"/>
+      <rect id="3d198062-b8b2-4f49-a571-06f0aa34944d" data-name="&lt;Прямоугольник&gt;" x="10.9" y="265.19" width="164.7" height="62.93" style="fill: #693267"/>
+      <rect id="6d6708af-84c1-481d-be14-3db708dc573a" data-name="&lt;Прямоугольник&gt;" x="10.9" y="265.19" width="164.7" height="27.26" style="fill: #522c62"/>
+      <rect id="fedb69f5-94c1-4921-a43e-0b1242175bc7" data-name="&lt;Прямоугольник&gt;" x="70.6" y="210.67" width="45.31" height="117.44" style="fill: #fcb316"/>
+      <rect id="6ae84cb7-82c8-43db-87a6-d1eeb7dcf3d2" data-name="&lt;Прямоугольник&gt;" x="115.91" y="210.67" width="19.92" height="117.44" transform="translate(251.74 538.79) rotate(180)" style="fill: #693267"/>
+      <rect id="bf216b32-57bb-4599-9cf9-4298e8ff9e06" data-name="&lt;Контур&gt;" x="115.91" y="265.19" width="19.92" height="62.93" style="fill: #522c62"/>
+      <rect id="58b6757d-ffb7-4895-beba-c586972cceab" data-name="&lt;Контур&gt;" x="115.91" y="265.19" width="19.92" height="27.26" style="fill: #3f2054"/>
+    </g>
+    <g id="b91bf01a-86c0-4162-8535-483d3e848241" data-name="&lt;Группа&gt;">
+      <path id="b2b73078-87b3-417f-a839-42fdf2fef93c" data-name="&lt;Составной контур&gt;" d="M417.27,39.75c-3.2-11.62-11.42-20-23.14-23.66-20.58-6.39-43.38,5.87-55.85,20-9.08,10.26-15.7,21.89-21.5,33.73-0.25,0-.49,0-0.74,0H299.12c-5.8-11.82-12.41-23.44-21.48-33.69C265.16,22,242.37,9.7,221.79,16.09c-11.73,3.64-19.94,12-23.14,23.66-3.91,14.2.48,31.54,10.93,43.15,11.32,12.58,27.17,18.14,41.16,23,1.81,0.63,3.61,1.26,5.38,1.9a309.18,309.18,0,0,0,40.58,11.66l4-18.62,7.31-3.5,7.31,3.5,4,18.62a309.19,309.19,0,0,0,40.58-11.66c1.77-.64,3.56-1.27,5.37-1.9,14-4.9,29.84-10.46,41.16-23C416.79,71.29,421.18,53.95,417.27,39.75ZM263.25,88c-1.83-.66-3.69-1.31-5.57-2-12.17-4.26-24.76-8.67-32.47-17.25-5.66-6.29-8.3-16.16-6.28-23.49,1.28-4.66,4.26-7.65,9.09-9.15A21.2,21.2,0,0,1,238.58,36c8.52,1.76,17.52,7.5,23.3,14,10.8,12.2,17.74,27.33,25.08,43.36l1.13,2.45C279.84,93.63,271.53,91,263.25,88ZM390.7,68.82c-7.71,8.58-20.3,13-32.47,17.25-1.88.66-3.74,1.31-5.57,2-8.27,3-16.58,5.59-24.83,7.77L329,93.36C336.3,77.33,343.24,62.2,354,50c5.78-6.53,14.78-12.27,23.3-14a21.2,21.2,0,0,1,10.55.22c4.83,1.5,7.81,4.49,9.09,9.15C399,52.66,396.35,62.53,390.7,68.82Z" style="fill: #dd375a"/>
+      <rect id="1b8d44bf-cc8f-40e7-b482-76ae359773cb" data-name="&lt;Прямоугольник&gt;" x="157.97" y="86.11" width="299.98" height="87.68" style="fill: #fcb316"/>
+      <rect id="1039f397-95bd-4360-88b5-7b4e7caba8c9" data-name="&lt;Прямоугольник&gt;" x="175.5" y="173.79" width="264.9" height="154.32" style="fill: #f89712"/>
+      <rect id="bf420eca-0b70-4485-9f55-4350fab9c5a7" data-name="&lt;Прямоугольник&gt;" x="175.5" y="173.79" width="264.9" height="43.84" style="fill: #f47920"/>
+      <rect id="983fd262-229b-4906-be44-33d90998f303" data-name="&lt;Прямоугольник&gt;" x="343.4" y="86.11" width="28.35" height="242.01" style="fill: #f89712"/>
+      <rect id="aeaf1e9d-2fb6-4c3e-9dd1-309c8a24736f" data-name="&lt;Прямоугольник&gt;" x="271.52" y="86.11" width="72.88" height="242.01" style="fill: #de4b5e"/>
+      <rect id="36b7602f-32d9-4ec0-82f6-b812600aede3" data-name="&lt;Контур&gt;" x="343.4" y="173.79" width="28.35" height="154.32" style="fill: #f47920"/>
+      <rect id="52caf102-0e40-4bb3-9fa6-ce28849ed4eb" data-name="&lt;Контур&gt;" x="343.4" y="173.79" width="28.35" height="43.84" style="fill: #f05823"/>
+    </g>
+    <g id="707558d2-15cb-4555-bb02-50393ea1f937" data-name="&lt;Группа&gt;">
+      <g id="bd90591e-4d29-4f3e-9536-b9e4a3bd9c90" data-name="&lt;Группа&gt;">
+        <g id="d61afeaa-cb07-44ef-850a-64a62788b93b" data-name="&lt;Группа&gt;">
+          <rect id="bdd81640-053b-4521-b8fa-33a2fb48269d" data-name="&lt;Прямоугольник&gt;" x="439.99" width="263.5" height="69.32" style="fill: #00bbc1"/>
+          <rect id="00581cfc-60f9-4ea6-a974-811e9445ecce" data-name="&lt;Прямоугольник&gt;" x="455.4" y="69.32" width="232.7" height="103.21" style="fill: #0099af"/>
+          <rect id="5c0f09ed-7259-4553-8836-d85f0d0f1123" data-name="&lt;Прямоугольник&gt;" x="455.4" y="69.32" width="232.7" height="29.36" style="fill: #0088a7"/>
+        </g>
+        <g id="f48c9bdb-d311-4568-8cec-424bd73ba82a" data-name="&lt;Группа&gt;">
+          <rect id="6b8ac2ec-5044-4d51-ad19-c664bf9ae662" data-name="&lt;Прямоугольник&gt;" x="439.99" width="263.5" height="16.22" style="fill: #3fd8d4"/>
+          <rect id="10b3935d-12f6-4b66-8fc6-f9b2732758fb" data-name="&lt;Прямоугольник&gt;" x="439.99" y="36.95" width="263.5" height="16.22" style="fill: #3fd8d4"/>
+        </g>
+        <g id="44f821df-63bd-4654-beb2-9e8d1c1e0584" data-name="&lt;Группа&gt;">
+          <rect id="f3ce5ce2-46ee-4216-938f-894fa62c5072" data-name="&lt;Прямоугольник&gt;" x="456.47" y="82.41" width="231.62" height="16.22" style="fill: #00789e"/>
+          <rect id="adeb69cb-bb3d-43e1-97c8-659ce8d9ce3f" data-name="&lt;Прямоугольник&gt;" x="456.47" y="119.36" width="231.62" height="16.22" style="fill: #0088a7"/>
+          <rect id="edec4721-8637-45d7-80ec-2c00324c5d1b" data-name="&lt;Прямоугольник&gt;" x="456.47" y="156.31" width="231.62" height="16.22" style="fill: #0088a7"/>
+        </g>
+      </g>
+      <g id="f63aaa38-3121-46f4-b8bd-0d5860211963" data-name="&lt;Группа&gt;">
+        <g id="1cbffcd2-7126-4ba6-a554-0c32d3bc0bdb" data-name="&lt;Группа&gt;">
+          <rect id="b5f2d9bc-5531-4185-8547-80c7e9804958" data-name="&lt;Прямоугольник&gt;" x="421.38" y="172.53" width="354.39" height="77.02" style="fill: url(#9643c4d7-f0d9-46db-ba60-55d4c7d58adc)"/>
+          <rect id="b56d96dc-c64f-4631-a430-07226e692196" data-name="&lt;Прямоугольник&gt;" x="436.78" y="249.56" width="323.58" height="78.56" style="fill: url(#8adba0a9-7ab8-449b-bb2c-0736171a6b79)"/>
+          <rect id="c4151a51-92d3-4908-8f1c-cb66d3461378" data-name="&lt;Прямоугольник&gt;" x="436.78" y="249.56" width="323.58" height="38.51" style="fill: url(#de18bbce-95eb-49e6-a492-fa9a8cd0189d)"/>
+        </g>
+        <g id="4b79e463-c578-4507-b45d-a37b2e03e2da" data-name="&lt;Группа&gt;">
+          <g>
+            <circle id="8b5d6855-f33f-42d8-8017-fac00ea4ed65" data-name="&lt;Контур&gt;" cx="453.39" cy="197.18" r="7.7" style="fill: #815384"/>
+            <circle id="5f84c2db-9fe5-4c44-987e-9bc1170bf3d6" data-name="&lt;Контур&gt;" cx="513.51" cy="197.18" r="7.7" style="fill: #815384"/>
+            <circle id="6a0d0d39-cebe-4f01-98f5-6c18bfa09421" data-name="&lt;Контур&gt;" cx="573.63" cy="197.18" r="7.7" style="fill: #815384"/>
+            <circle id="cefa451e-900f-4a02-987d-443e09c2a2a4" data-name="&lt;Контур&gt;" cx="633.75" cy="197.18" r="7.7" style="fill: #815384"/>
+            <circle id="09029307-0729-4b89-a518-5b7d623ee4d7" data-name="&lt;Контур&gt;" cx="693.88" cy="197.18" r="7.7" style="fill: #815384"/>
+            <circle id="d57b0a7d-627c-4a0e-9035-58020bc45113" data-name="&lt;Контур&gt;" cx="754" cy="197.18" r="7.7" style="fill: #815384"/>
+          </g>
+        </g>
+        <g id="f858f88f-b92c-45f3-a9f2-275eb19709eb" data-name="&lt;Группа&gt;">
+          <g>
+            <circle id="541f3b87-ea76-4b9e-a6f4-f066136c294a" data-name="&lt;Контур&gt;" cx="483.45" cy="229.53" r="7.7" style="fill: #815384"/>
+            <circle id="93d450ee-bc93-428d-84d4-23722e47b6e6" data-name="&lt;Контур&gt;" cx="543.57" cy="229.53" r="7.7" style="fill: #815384"/>
+            <circle id="b2c6666f-ea05-49f9-9711-4ea13103ccf4" data-name="&lt;Контур&gt;" cx="603.69" cy="229.53" r="7.7" style="fill: #815384"/>
+            <circle id="467bbedb-781b-49ac-b73d-eadfd35aed0b" data-name="&lt;Контур&gt;" cx="663.82" cy="229.53" r="7.7" style="fill: #815384"/>
+            <circle id="1df36221-f57f-44a1-8ef0-5ae786d2bb13" data-name="&lt;Контур&gt;" cx="723.94" cy="229.53" r="7.7" style="fill: #815384"/>
+          </g>
+        </g>
+        <g id="49be83f6-4783-4e67-8586-0fd6d73f7b8d" data-name="&lt;Группа&gt;">
+          <g>
+            <circle id="cb54c0bf-9665-4f32-bfe7-7f8ead55f4d4" data-name="&lt;Контур&gt;" cx="449.83" cy="273.43" r="7.7" style="fill: #623563"/>
+            <circle id="417c3d6d-4c45-4c87-a820-1bb051a87f02" data-name="&lt;Контур&gt;" cx="509.95" cy="273.43" r="7.7" style="fill: #623563"/>
+            <circle id="8a309b4f-81a5-40d0-a03f-72bab384de77" data-name="&lt;Контур&gt;" cx="570.08" cy="273.43" r="7.7" style="fill: #623563"/>
+            <circle id="b9e2a789-f105-4b22-8d3b-9927400d5e56" data-name="&lt;Контур&gt;" cx="630.2" cy="273.43" r="7.7" style="fill: #623563"/>
+            <circle id="7bdec8a6-4239-4b31-9e46-e1f32accd178" data-name="&lt;Контур&gt;" cx="690.32" cy="273.43" r="7.7" style="fill: #623563"/>
+            <circle id="256cb4ff-7951-405e-ae73-1d55edcb990a" data-name="&lt;Контур&gt;" cx="750.44" cy="273.43" r="7.7" style="fill: #623563"/>
+          </g>
+        </g>
+        <g id="1a79100d-0b38-4643-a72b-71f72d1964c9" data-name="&lt;Группа&gt;">
+          <g>
+            <circle id="f8023524-f06f-4a7b-8537-d0bd74614d3c" data-name="&lt;Контур&gt;" cx="479.89" cy="305.78" r="7.7" style="fill: #724973"/>
+            <circle id="1db386d1-a543-4878-af25-3b6f5cbabb1f" data-name="&lt;Контур&gt;" cx="540.01" cy="305.78" r="7.7" style="fill: #724973"/>
+            <circle id="6994cfa6-a9a8-42d2-afa7-7f98bbacf2b1" data-name="&lt;Контур&gt;" cx="600.14" cy="305.78" r="7.7" style="fill: #724973"/>
+            <circle id="73c9aaa8-5863-4497-8a6f-de4bdad0b675" data-name="&lt;Контур&gt;" cx="660.26" cy="305.78" r="7.7" style="fill: #724973"/>
+            <circle id="86f9ff6c-79ae-4ecc-84d3-20bcbfc0b8f0" data-name="&lt;Контур&gt;" cx="720.38" cy="305.78" r="7.7" style="fill: #724973"/>
+          </g>
+        </g>
+      </g>
+    </g>
+    <g id="b34550e5-2c7a-4c33-80ce-5824ca3a4502" data-name="&lt;Группа&gt;">
+      <path id="94a3bc26-15af-4344-b3ae-e71aba50c882" data-name="&lt;Составной контур&gt;" d="M908.52,40.3a20.62,20.62,0,0,0-14.26-14.58c-12.68-3.94-26.73,3.62-34.42,12.3-5.6,6.32-9.67,13.49-13.25,20.78l-0.46,0H835.72c-3.57-7.28-7.65-14.44-13.24-20.76-7.69-8.68-21.73-16.24-34.42-12.3A20.62,20.62,0,0,0,773.8,40.3c-2.41,8.75.3,19.43,6.73,26.59,7,7.75,16.74,11.18,25.36,14.2l3.31,1.17a190.56,190.56,0,0,0,25,7.18L836.66,78l4.5-2.15,4.5,2.15,2.44,11.48a190.55,190.55,0,0,0,25-7.18l3.31-1.17c8.62-3,18.39-6.44,25.36-14.2C908.22,59.73,910.93,49,908.52,40.3ZM813.61,70.06l-3.43-1.21c-7.5-2.63-15.26-5.34-20-10.63-3.49-3.87-5.11-10-3.87-14.47a7.75,7.75,0,0,1,5.6-5.64,13.06,13.06,0,0,1,6.5-.13,28.27,28.27,0,0,1,14.36,8.65c6.65,7.52,10.93,16.84,15.46,26.72l0.69,1.51C823.83,73.5,818.71,71.9,813.61,70.06Zm78.53-11.84c-4.75,5.29-12.51,8-20,10.63l-3.43,1.21c-5.1,1.84-10.22,3.44-15.3,4.79l0.69-1.51c4.53-9.87,8.8-19.2,15.46-26.72A28.27,28.27,0,0,1,883.91,38a13.06,13.06,0,0,1,6.5.13,7.75,7.75,0,0,1,5.6,5.64C897.26,48.25,895.63,54.34,892.15,58.21Z" style="fill: url(#45b52715-5e2a-4ce3-a068-138ffe7f0db9)"/>
+      <rect id="2b1d46e8-20d4-4dd0-a9b3-f9b2c29770cf" data-name="&lt;Прямоугольник&gt;" x="748.74" y="68.87" width="184.85" height="54.03" style="fill: #ff3371"/>
+      <rect id="72d023ae-6c86-433d-8b6c-37e79d5b727c" data-name="&lt;Прямоугольник&gt;" x="759.54" y="122.9" width="163.24" height="205.22" style="fill: #ff3371"/>
+      <rect id="0965a501-bf54-4ad4-8a5d-d96d119092d5" data-name="&lt;Прямоугольник&gt;" x="759.54" y="122.9" width="163.24" height="27.02" style="fill: #bd1d50"/>
+      <rect id="07a812ae-3154-47bd-ad87-0c2039774192" data-name="&lt;Прямоугольник&gt;" x="818.71" y="68.87" width="44.91" height="259.25" style="fill: url(#c9b8fc28-e8fc-4998-9327-d5a031140965)"/>
+      <rect id="cdb12d25-c4e1-447d-a1c6-d9a16c9db5aa" data-name="&lt;Прямоугольник&gt;" x="863.62" y="68.87" width="20.41" height="259.25" transform="translate(1747.64 396.98) rotate(180)" style="fill: #ce3457"/>
+      <rect id="39ee2e47-cbac-4222-b170-19e4e322e242" data-name="&lt;Контур&gt;" x="863.62" y="122.9" width="20.41" height="205.22" style="fill: #bd1d50"/>
+      <rect id="f202fc74-9ade-4c42-a407-33c44b6206b7" data-name="&lt;Контур&gt;" x="863.62" y="122.9" width="20.41" height="27.02" style="fill: #841943"/>
+    </g>
+  </g>
+</svg>

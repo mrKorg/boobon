@@ -1,0 +1,1 @@
+<vue-partner-modal></vue-partner-modal>

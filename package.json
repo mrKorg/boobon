@@ -1,0 +1,26 @@
+{
+  "name": "start_project",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "*",
+    "gulp": "*",
+    "gulp-livereload": "*",
+    "gulp-minify-css": "*",
+    "gulp-postcss": "*",
+    "gulp-rename": "*",
+    "gulp-sass": "*",
+    "gulp-sourcemaps": "*",
+    "gulp-svgstore": "*",
+    "gulp-uglify": "*",
+    "gulp.spritesmith": "*",
+    "node-reset-scss": "*",
+    "pump": "*"
+  }
+}
