@@ -21,6 +21,7 @@
     "magnific-popup": "^1.1.0",
     "aos": "^2.1.1",
     "perfect-scrollbar": "^0.7.1",
-    "font-awesome": "^4.7.0"
+    "font-awesome": "^4.7.0",
+    "easydropdown": "^2.1.4"
   }
 }

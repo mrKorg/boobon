@@ -1,3 +1,9 @@
+<?php
+$modifier = 'white';
+$sizes = true;
+$opt = true;
+?>
+
 <div class="eProductCart">
     <h4 class="eProductCart__title">
         Boobon kids
@@ -20,33 +26,32 @@
         </span>
     </a>
 
-    @php($opt = false)
-    @if ($opt)
+    <?php if ($opt) : ?>
         <div class="eProductCart__row--cols">
             <div class="row middle-xs">
                 <div class="col-xs-6">
                     <div class="eSizeSelect--white">
-                        <div class="eSizeSelect__val {{-- if isset sizes --}}eSizeSelect__val--withDrop{{-- endifs --}}">
+                        <div class="eSizeSelect__val <?php echo ($sizes) ? 'eSizeSelect__val--withDrop' : '' ?>">
                             <p>Большой</p>
                         </div>
-                        {{-- if isset sizes --}}
-                        <div class="eSizeSelect__drop">
-                            <p>
-                                <a href="#">
-                                    Маленький
-                                </a>
-                            </p>
-                            <p>
-                                <a href="#">
-                                    Большой
-                                </a>
-                            </p>
-                        </div>
-                        {{-- endif isset sizes --}}
+                        <?php if ($sizes) : ?>
+                            <div class="eSizeSelect__drop">
+                                <p>
+                                    <a href="#">
+                                        Маленький
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#">
+                                        Большой
+                                    </a>
+                                </p>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    @include('front.pages.cart.parts.eColorSelect', ['modifier' => 'white'])
+                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eColorSelect.php') ?>
                 </div>
             </div>
         </div>
@@ -63,9 +68,7 @@
                     </p>
                 </div>
                 <div class="col-xs-6">
-
-                    @include('front.pages.cart.parts.eQtySelect', ['modifier' => 'white'])
-
+                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eQtySelect.php') ?>
                 </div>
             </div>
         </div>
@@ -81,32 +84,36 @@
                 </strong>
             </p>
             <p>
-                Чтобы получить скидку <span>23%</span>,<br>
-                купите еще <span>3</span> ящика
+                Чтобы получить скидку
+                <span>23%</span>
+                ,<br>
+                купите еще
+                <span>3</span>
+                ящика
             </p>
         </div>
-    @else
+    <?php else : ?>
         <div class="eProductCart__row">
             <div class="row middle-xs">
                 <div class="col-xs-6">
                     <div class="eSizeSelect--white">
-                        <div class="eSizeSelect__val {{-- if isset sizes --}}eSizeSelect__val--withDrop{{-- endifs --}}">
+                        <div class="eSizeSelect__val <?php echo ($sizes) ? 'eSizeSelect__val--withDrop' : '' ?>">
                             <p>Большой</p>
                         </div>
-                        {{-- if isset sizes --}}
-                        <div class="eSizeSelect__drop">
-                            <p>
-                                <a href="#">
-                                    Маленький
-                                </a>
-                            </p>
-                            <p>
-                                <a href="#">
-                                    Большой
-                                </a>
-                            </p>
-                        </div>
-                        {{-- endif isset sizes --}}
+                        <?php if ($sizes) : ?>
+                            <div class="eSizeSelect__drop">
+                                <p>
+                                    <a href="#">
+                                        Маленький
+                                    </a>
+                                </p>
+                                <p>
+                                    <a href="#">
+                                        Большой
+                                    </a>
+                                </p>
+                            </div>
+                        <?php endif; ?>
                     </div>
                 </div>
                 <div class="col-xs-6">
@@ -119,18 +126,14 @@
         <div class="eProductCart__row--cols eProductCart__row--last">
             <div class="row middle-xs">
                 <div class="col-xs-6">
-
-                    @include('front.pages.cart.parts.eQtySelect', ['modifier' => 'white'])
-
+                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eQtySelect.php') ?>
                 </div>
                 <div class="col-xs-6">
-
-                    @include('front.pages.cart.parts.eColorSelect', ['modifier' => 'white'])
-
+                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eColorSelect.php') ?>
                 </div>
             </div>
         </div>
-    @endif
+    <?php endif; ?>
 
     <div class="eProductCart__delete">
         <a href="#">

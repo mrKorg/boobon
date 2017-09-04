@@ -1,17 +1,17 @@
-<div id="buyOneClick-modal" class="mCartPopup mfp-hide">
+<div id="modal-cart" class="mCartPopup mfp-hide">
     <form action="">
         <div class="mCartPopup__box">
             <div class="row">
                 <div class="col-xs-12 col-lg-6">
-                    <div class="mCartPopup__list" id="js_mCartPopup__list">
+                    <div class="mCartPopup__list js_scroll">
 
-                        @for ($i=1; $i<5; $i++)
+                        <?php for ($i = 0; $i < 4; $i++) : ?>
 
                             <div class="mCartPopup__prod">
-                                @include('front.pages.cart.version-2.parts.productPreview')
+                                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-2/parts/productPreview.php') ?>
                             </div>
 
-                        @endfor
+                        <?php endfor; ?>
 
                     </div>
                 </div>
@@ -33,10 +33,8 @@
                     </div>
                     <div class="mCartPopup__formBox">
                         <h3 class="mCartPopup__title">
-                            <h3 class="mCartPopup__title">
-                                Оформить покупку с выбором вида<br>
-                                доставки и оплаты
-                            </h3>
+                            Оформить покупку с выбором вида<br>
+                            доставки и оплаты
                         </h3>
                         <div class="mCartPopup__formRow">
                             <div class="row middle-xs">

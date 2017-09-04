@@ -22,10 +22,18 @@
                     </div>
                 </div>
                 <div class="mForm__row">
-                    {{-- TODO: insert vue select --}}
+                    <select name="" id="" class="dropdown" data-settings='{"cutOff": 8}'>
+                        <option value="">Выберите товар</option>
+                        <?php
+                        $products = ['active', 'light', 'cool', 'smile', 'kids', 'crystal'];
+                        foreach ($products as $k => $product) : ?>
+                            <option value=""><?php echo $product ?></option>
+                        <?php endforeach; ?>
+                    </select>
                 </div>
                 <div class="mForm__row">
-                    <textarea name="review" id="" cols="30" rows="10" class="mForm__textarea" placeholder="Текст отзыва"></textarea>
+                    <textarea name="review" id="" cols="30" rows="10" class="mForm__textarea"
+                              placeholder="Текст отзыва"></textarea>
                 </div>
                 <div class="mForm__btn">
                     <button type="submit" class="eBtn eBtn--pink eBtn--big">

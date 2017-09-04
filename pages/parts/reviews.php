@@ -44,9 +44,11 @@
                                 Тестовое Имя
                             </p>
                             <div class="eReview__text">
-                                <div class="eReview__content js_eReview__content">
+                                <div class="eReview__content js_scroll">
                                     Non porro ipsum sapiente quasi rerum repellat. Mollitia minima fugit minima tenetur
                                     illo reiciendis. Minus est eveniet et minus ut dolorem. Quis et unde aperiam magnam
+                                    tempore est. Minus est eveniet et minus ut dolorem. Quis et unde aperiam magnam
+                                    tempore est. Minus est eveniet et minus ut dolorem. Quis et unde aperiam magnam
                                     tempore est.
                                 </div>
                                 <?php

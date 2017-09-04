@@ -1,4 +1,4 @@
-<div class="eColorSelect @if (isset($modifier)) eColorSelect--{{ $modifier }} @endif">
+<div class="eColorSelect <?php echo (isset($modifier)) ? 'eColorSelect--'.$modifier : '' ?>">
     <div class="eColorSelect__val">
         <p>
             <span class="eColorSelect__label">Цвет</span>

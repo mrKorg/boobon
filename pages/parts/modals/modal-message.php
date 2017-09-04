@@ -3,9 +3,9 @@
     <div class="pPopup__content">
         <div class="modalMessage">
 
-            @php($content = 'callback')
-            @if ($content == 'error')
-                {{--  Error  --}}
+            <?php $content = 'review' ?>
+            <?php if ($content == 'error') : ?>
+
                 <div class="modalMessage__img">
                     <svg width="190" height="190">
                         <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#gadget"></use>
@@ -20,9 +20,9 @@
                         Попробовать снова
                     </a>
                 </div>
-                {{--  Error  --}}
-            @elseif ($content == 'subscribe')
-                {{--  Subscribe  --}}
+
+            <?php elseif ($content == 'subscribe') : ?>
+
                 <div class="modalMessage__img">
                     <p class="image">
                     <span class="body">
@@ -46,9 +46,9 @@
                         Хорошо
                     </a>
                 </div>
-                {{--  Subscribe  --}}
-            @elseif ($content == 'review')
-                {{--  Review  --}}
+
+            <?php elseif ($content == 'review') : ?>
+
                 <div class="modalMessage__img">
                     <p class="image">
                     <span class="body">
@@ -72,9 +72,9 @@
                         Хорошо
                     </a>
                 </div>
-                {{--  Review  --}}
-            @elseif ($content == 'buy')
-                {{--  Buy  --}}
+
+            <?php elseif ($content == 'buy') : ?>
+
                 <div class="modalMessage__img">
                     <p class="image">
                     <span class="body">
@@ -98,9 +98,9 @@
                         Попробовать снова
                     </a>
                 </div>
-                {{--  Buy  --}}
-            @elseif ($content == 'callback')
-                {{--  callback  --}}
+
+            <?php elseif ($content == 'callback') : ?>
+
                 <div class="modalMessage__img">
                     <p class="image">
                     <span class="body">
@@ -123,8 +123,8 @@
                         Хорошо
                     </a>
                 </div>
-                {{--  callback  --}}
-            @endif
+
+            <?php endif ?>
         </div>
     </div>
 

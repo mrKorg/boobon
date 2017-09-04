@@ -1,4 +1,4 @@
-<div class="eQtySelect @if (isset($modifier)) eQtySelect--{{ $modifier }} @endif">
+<div class="eQtySelect <?php echo (isset($modifier)) ? 'eQtySelect--'.$modifier : '' ?>">
     <div class="eQtySelect__val">
         <p>
             <span>3</span>

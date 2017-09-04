@@ -62,7 +62,7 @@
                                 </a>
                             </div>
                             <div class="header__cart">
-                                <a href="#" id="js_header__cart" class="eBtn--blue">
+                                <a href="#" class="eBtn--blue">
                                     <span class="text">
                                         Корзина
                                     </span>

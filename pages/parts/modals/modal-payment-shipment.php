@@ -7,42 +7,42 @@
         <div class="row">
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    <img src="{{ asset('images/paymentShipping/novaposhta.jpg') }}" alt="">
+                    <img src="/assets/images/paymentShipping/novaposhta.jpg" alt="">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    <img src="{{ asset('images/paymentShipping/novaposhta_courier.jpg') }}" alt="">
+                    <img src="/assets/images/paymentShipping/novaposhta_courier.jpg" alt="">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    <img src="{{ asset('images/paymentShipping/ukrposhta.jpg') }}" alt="">
+                    <img src="/assets/images/paymentShipping/ukrposhta.jpg" alt="">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    <img src="{{ asset('images/paymentShipping/pickup.jpg') }}" alt="">
+                    <img src="/assets/images/paymentShipping/pickup.jpg" alt="">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    <img src="{{ asset('images/paymentShipping/privat.jpg') }}" alt="">
+                    <img src="/assets/images/paymentShipping/privat.jpg" alt="">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    @svg('visa')
+                    <img src="/assets/images/payment/visa.jpg" alt="">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    @svg('mastercard')
+                    <img src="/assets/images/payment/master.jpg" alt="">
                 </div>
             </div>
             <div class="col-xs-6 col-md-3">
                 <div class="mPopup__logoBox">
-                    @svg('paypal')
+                    <img src="/assets/images/payment/paypal.jpg" alt="">
                 </div>
             </div>
         </div>

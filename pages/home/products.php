@@ -89,7 +89,7 @@
                 $delay = 200;
                 $products = ['active', 'light', 'cool'];
                 foreach ($products as $k => $product) : ?>
-                    <div class="col-xs-12 col-lg-6 pCatalog__item <?php echo (count($products) == $k) ? 'last-lg' : '' ?>"> <!-- TODO: return aos data-aos="fade-up" data-aos-delay="< ?php echo $k * 100 + $delay ?>"-->
+                    <div class="col-xs-12 col-lg-6 pCatalog__item <?php echo (count($products) == $k + 1) ? 'last-lg' : '' ?>"> <!-- TODO: return aos data-aos="fade-up" data-aos-delay="< ?php echo $k * 100 + $delay ?>"-->
                         <?php include ($_SERVER['DOCUMENT_ROOT'] . '/pages/product/parts/preview.php') ?>
                     </div>
                 <?php endforeach; ?>

@@ -3780,7 +3780,7 @@ body
   background: radial-gradient($blue--shedow 0%, $blue 70%)
   position: relative
   @media (min-width: $md)
-    padding: 0 30px 20px
+    padding: 0 25px 20px
   @include xs()
     padding: 0 15px 20px
   @include element(title)
@@ -3883,6 +3883,7 @@ body
     line-height: 1
     @media (min-width: $md)
       font-size: 20px
+      margin: 0 -5px
     @include xs()
       font-size: 16px
   @include element(delete)
@@ -4325,7 +4326,7 @@ body
       margin-right: 20px
       margin-bottom: 10px
     .eRadioBox
-      @include position(absolute, 1px, null, null, 0)
+      @include position(absolute, 2px, null, null, 0)
       @media (max-width: $md-top)
         top: -1px
   @include element(total)
@@ -4905,6 +4906,20 @@ body
         width: 100%
         padding: 0 25px
 
+.eCustomSelect
+  display: block
+  width: 100%
+  height: 48px
+  border: 1px solid rgba($black, .3)
+  @include placeholder(rgba($black, .3))
+  border-radius: 24px
+  padding: 0 25px
+  color: $black
+  font-size: 16px
+  transition: border .3s ease
+  &:focus, &:active, &:hover
+    border-color: $black
+
 input.hasError
   border-color: $pink !important
   color: $pink
@@ -4972,3 +4987,116 @@ input.hasError
     &.mfp-removing
       .mfp-content
         opacity: 0
+// Easy dropDown
+.dropdown
+  position: relative
+  border: 1px solid rgba($black, .3)
+  cursor: pointer
+  background: $white
+  border-radius: 24px
+  user-select: none
+  transition: all 150ms ease-in-out
+  div, li, div::after
+    transition: all 150ms ease-in-out
+  .selected
+    padding: 0 25px
+    height: 48px
+    font-size: 16px
+    display: block
+    line-height: 48px
+    color: rgba($black, .3)
+    &::after
+      pointer-events: none
+  &.scrollable
+    div
+      &::after
+        pointer-events: none
+  &.open
+    z-index: 2
+    .carat
+      margin-top: -10px
+      border-top: 6px solid transparent
+      border-bottom: 8px solid $black
+    div
+      opacity: 1
+      z-index: 2
+  &:hover
+    border-color: $black
+    color: $black
+  &.focus
+    border-color: $black
+    color: $black
+  .carat
+    position: absolute
+    right: 20px
+    top: 50%
+    margin-top: -4px
+    border: 6px solid transparent
+    border-top: 8px solid $black
+  &.disabled
+    .carat
+      border-top-color: rgba($black, .5)
+    .selected
+      color: rgba($black, .5)
+  .old
+    @include position(absolute, 0, 0, 0, 0)
+    overflow: hidden
+  select
+    @include position(absolute, 0, null, null, 0)
+    visibility: hidden
+  &.touch
+    .old
+      width: 100%
+      height: 100%
+    select
+      width: 100%
+      height: 100%
+      opacity: 0
+  li
+    display: block
+    font-size: 18px
+    line-height: 1
+    color: $black
+    padding: 9px 12px
+    overflow: hidden
+    white-space: nowrap
+  div
+    @include position(absolute, 50px, 0, null, 0, 10)
+    height: 0
+    background: $white
+    border: 1px solid $black
+    border-radius: 3px
+    overflow: hidden
+    opacity: 0
+    box-shadow: 0 5px 7px rgba($black, .2)
+  &.scrollable
+    div
+      &::after
+        content: ''
+        @include position(absolute,null,0,0,0)
+        box-shadow: inset 0 -50px 30px -35px $white
+    &.bottom
+      div
+        &::after
+          opacity: 0
+    &.open
+      ul
+        overflow-y: auto
+  ul
+    position: absolute
+    left: 0
+    top: 0
+    height: 100%
+    width: 100%
+    list-style: none
+    overflow: hidden
+    li
+      list-style: none
+      padding: 8px 12px
+      &.focus
+        background: $blue
+        position: relative
+        z-index: 3
+        color: $white
+      &.active
+        font-weight: 700

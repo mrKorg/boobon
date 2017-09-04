@@ -35,7 +35,6 @@ for (let key = 0; key < methodBtns.length; key++) {
     }
 }
 
-
 // Custom Checkbox
 let checkBoxes = document.getElementsByClassName('eCheckBox');
 for (let key = 0; key < checkBoxes.length; key++) {
@@ -48,25 +47,24 @@ for (let key = 0; key < checkBoxes.length; key++) {
     }
 }
 
-
-// // Custom Checkbox
-// let radioBoxes = document.getElementsByClassName('eRadioBox');
-// for (let key = 0; key < radioBoxes.length; key++) {
-//     if (radioBoxes.hasOwnProperty(key)) {
-//         let input = radioBoxes[key].children[0];
-//         if (input.checked) radioBoxes[key].className += 'active';
-//         input.onclick = function (e) {
-//             this.parentNode.classList.toggle('active');
-//         };
-//         input.onchange = function (e) {
-//             let other = document.getElementsByName(input.getAttribute('name'));
-//             for (let i = 0; i < other.length; i++) {
-//                 if (other.hasOwnProperty(i)) other[i].parentNode.classList.remove('active');
-//             }
-//             (input.checked) ? this.parentNode.classList.add('active') : this.parentNode.classList.remove('active');
-//         }
-//     }
-// }
+// Custom Checkbox
+let radioBoxes = document.getElementsByClassName('eRadioBox');
+for (let key = 0; key < radioBoxes.length; key++) {
+    if (radioBoxes.hasOwnProperty(key)) {
+        let input = radioBoxes[key].children[0];
+        if (input.checked) radioBoxes[key].className += 'active';
+        input.onclick = function (e) {
+            this.parentNode.classList.toggle('active');
+        };
+        input.onchange = function (e) {
+            let other = document.getElementsByName(input.getAttribute('name'));
+            for (let i = 0; i < other.length; i++) {
+                if (other.hasOwnProperty(i)) other[i].parentNode.classList.remove('active');
+            }
+            (input.checked) ? this.parentNode.classList.add('active') : this.parentNode.classList.remove('active');
+        }
+    }
+}
 
 
 $(window).on('load', function () {
@@ -76,6 +74,10 @@ $(window).on('load', function () {
 $(document).ready(function () {
 
     "use strict";
+
+    // Loader
+    $('#page-preloader').fadeOut('slow');
+    $('#page-preloader .spinner').fadeOut('slow');
 
     // Reset on resize
     let windowWidth = $(window).width();
@@ -382,19 +384,16 @@ $(document).ready(function () {
         type: 'inline',
         midClick: true,
         removalDelay: 300,
-        mainClass: 'mfp-fade'
+        mainClass: 'mfp-fade',
+        callbacks: {
+            open: function () {
+                $('.js_scroll').perfectScrollbar('update');
+            }
+        }
     });
 
     $(document).on('click', '.close-popup-link', function () {
         $.magnificPopup.close()
-    });
-
-    $('#showCartModal').magnificPopup({
-        callbacks: {
-            open: function () {
-                Scroll.update(js_mCartPopup__list);
-            }
-        }
     });
 
     $('.pProductContent__gallery').magnificPopup({
@@ -406,44 +405,8 @@ $(document).ready(function () {
     });
 
     // Scroll Bar
-    let js_mCart__list = $('#js_mCart__list');
-    if (js_mCart__list) {
-        js_mCart__list.perfectScrollbar({
-            maxScrollbarLength: 18,
-            suppressScrollX: true
-        });
-    }
-    let js_pCart2__list = $('#js_pCart2__list');
-    if (js_pCart2__list) {
-        js_pCart2__list.perfectScrollbar({
-            maxScrollbarLength: 18,
-            suppressScrollX: true
-        });
-    }
-    let js_mCartPopup__list = $('#js_mCartPopup__list');
-    if (js_mCartPopup__list) {
-        js_mCartPopup__list.perfectScrollbar({
-            maxScrollbarLength: 18,
-            suppressScrollX: true
-        });
-    }
-    let js_payment_shipment__scroll = $('.js_payment-shipment__scroll');
-    js_payment_shipment__scroll.each(function () {
-        this.perfectScrollbar({
-            maxScrollbarLength: 18,
-            suppressScrollX: true
-        });
-    });
-    let js_eReview__content = document.getElementsByClassName('js_eReview__content');
-    js_eReview__content.each(function () {
-        this.perfectScrollbar({
-            maxScrollbarLength: 18,
-            suppressScrollX: true
-        });
-    });
-    let js_eCustomSelect__scroll = document.getElementsByClassName('js_eCustomSelect__scroll');
-    js_eCustomSelect__scroll.each(function () {
-        this.perfectScrollbar({
+    $('.js_scroll').each(function () {
+        $(this).perfectScrollbar({
             maxScrollbarLength: 18,
             suppressScrollX: true
         });

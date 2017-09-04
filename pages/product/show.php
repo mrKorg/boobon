@@ -227,7 +227,7 @@ $product = $products[array_rand($products)];
                                             </a>
                                         </p>
                                         <div class="pProductContent__link">
-                                            <a href="#buyOneClick-modal" class="pink open-popup-link">
+                                            <a href="#" class="pink">
                                                 Купить в 1 клик
                                             </a>
                                         </div>
@@ -291,7 +291,7 @@ $product = $products[array_rand($products)];
                                 <p>Выберите город</p>
                             </div>
                             <div class="eCustomSelect__drop">
-                                <div class="eCustomSelect__scroll js_eCustomSelect__scroll">
+                                <div class="eCustomSelect__scroll js_scroll">
                                     <a>Днепр</a>
                                     <a>Харьков</a>
                                     <a>Киев</a>

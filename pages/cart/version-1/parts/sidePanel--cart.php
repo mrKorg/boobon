@@ -10,9 +10,15 @@
         <h3 class="mCart__title">
             Корзина <span class="num">34</span>
         </h3>
-        <div class="mCart__list" id="js_mCart__list">
+        <div class="mCart__list js_scroll">
             <div class="mCart__prod">
-                @include('front.pages.cart.version-1.parts.productPreview')
+                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-1/parts/productPreview.php') ?>
+            </div>
+            <div class="mCart__prod">
+                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-1/parts/productPreview.php') ?>
+            </div>
+            <div class="mCart__prod">
+                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-1/parts/productPreview.php') ?>
             </div>
         </div>
         <div class="mCart__footer">
@@ -20,7 +26,7 @@
                 К оплате: <strong>278 874 руб</strong>
             </p>
             <p class="mCart__btn">
-                <a href="/horizontal-checkout" class="eBtn--pink eBtn--big">
+                <a href="/pages/cart/version-1/index.php" class="eBtn--pink eBtn--big">
                     Перейти к покупке
                 </a>
             </p>
