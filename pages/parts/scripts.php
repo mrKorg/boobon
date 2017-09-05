@@ -6,7 +6,6 @@
         ms.href = hf;
         document.getElementsByTagName("body")[0].appendChild(ms);
     }
-    loadCSS("<?php echo HTTP ?>/bower_components/aos/dist/aos.css");
     loadCSS("<?php echo HTTP ?>/assets/css/app.css");
 </script>
 
@@ -21,7 +20,7 @@
             {"src": "<?php echo HTTP ?>/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js", "async": false},
             {"src": "<?php echo HTTP ?>/bower_components/slick-carousel/slick/slick.min.js", "async": false},
             {"src": "<?php echo HTTP ?>/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js", "async": false},
-            {"src": "<?php echo HTTP ?>/bower_components/aos/dist/aos.js", "async": false},
+            {"src": "<?php echo HTTP ?>/bower_components/scrollreveal/dist/scrollreveal.min.js", "async": false},
             {"src": "<?php echo HTTP ?>/assets/js/app.js", "async": false}
         ]
     };

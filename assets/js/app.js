@@ -1,4 +1,19 @@
-AOS.init();
+(function(){
+
+    var config = {
+        reset: true,
+        viewFactor : 0.15,
+        duration   : 800,
+        distance   : "0px",
+        scale      : 0.8,
+    };
+
+    window.sr = new ScrollReveal(config);
+    sr.reveal('.animateElement');
+    document.documentElement.classList.add('sr');
+})();
+
+
 
 // Show SidePanel Cart
 let body = document.getElementsByTagName('body')[0];

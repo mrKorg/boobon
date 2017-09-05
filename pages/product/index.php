@@ -15,7 +15,7 @@
                 $delay = 200;
                 $products = ['active', 'starlight', 'cool', 'smile', 'kids', 'crystal'];
                 foreach ($products as $k => $product) : ?>
-                    <div class="col-xs-12 col-lg-6 pCatalog__item">
+                    <div class="col-xs-12 col-lg-6 pCatalog__item animateElement">
                         <?php include (ROOT . '/pages/product/parts/preview.php') ?>
                     </div>
                 <?php endforeach; ?>

@@ -23,6 +23,6 @@
     "font-awesome": "^4.7.0",
     "easydropdown": "^2.1.4",
     "jquery-animate-scroll": "^1.0.0",
-    "aos": "^2.2.0"
+    "scrollreveal": "^3.3.6"
   }
 }

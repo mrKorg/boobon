@@ -26,7 +26,7 @@
             </div>
             <div class="row">
                 <?php for ($i = 0; $i < 2; $i++) : ?>
-                    <div class="co-xs-12 col-lg-6">
+                    <div class="co-xs-12 col-lg-6 animateElement">
 
                         <div class="eReview--white">
                             <p class="eReview__image">
