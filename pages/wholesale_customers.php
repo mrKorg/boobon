@@ -1,8 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
 <?php
 $title = 'Оптовым клиентам';
-include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
+include(ROOT . '/pages/parts/pageHeader.php') ?>
 
     <div class="pWholesaleCustomers">
         <div class="container">
@@ -44,7 +46,67 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
                     Мы заинтересованы в долгосрочном сотрудничестве и партнерстве с:
                 </p>
             </div>
-            <vue-wholesale-customers-who></vue-wholesale-customers-who>
+            <div class="pWholesaleCustomers__who">
+                <div class="row">
+                    <div class="pWholesaleCustomers__col">
+                        <a href="#modal-offer" class="open-popup-link image">
+                            <svg width="84" height="74">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cooperation-1"></use>
+                            </svg>
+                        </a>
+                        <p class="text">
+                            Торговыми сетям
+                        </p>
+                    </div>
+                    <div class="pWholesaleCustomers__col">
+                        <a href="#modal-offer" class="open-popup-link image">
+                            <svg width="80" height="80">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cooperation-3"></use>
+                            </svg>
+                        </a>
+                        <p class="text">
+                            Дистрибьюторами
+                        </p>
+                    </div>
+                    <div class="pWholesaleCustomers__col">
+                        <a href="#modal-offer" class="open-popup-link image">
+                            <svg width="100" height="80">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cooperation-5"></use>
+                            </svg>
+                        </a>
+                        <p class="text">
+                            Оптовикам
+                        </p>
+                    </div>
+                    <div class="pWholesaleCustomers__col">
+                        <a href="#modal-offer" class="open-popup-link image">
+                            <svg width="86" height="82">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cooperation-2"></use>
+                            </svg>
+                        </a>
+                        <p class="text">
+                            Интернет-магазинами
+                        </p>
+                    </div>
+                    <div class="pWholesaleCustomers__col">
+                        <a href="#modal-offer" class="open-popup-link image">
+                            <svg width="68" height="76">
+                                <use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#cooperation-4"></use>
+                            </svg>
+                        </a>
+                        <p class="text">
+                            Крутыми мамами, папами, дядями и тётями
+                        </p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-xs-12">
+                        <p class="pWholesaleCustomers__cooperationElse">
+                            и всеми, кто хочет дарить детям счастливое, здоровое детство!
+                        </p>
+                    </div>
+                </div>
+            </div>
             <div class="bAdvantages--white">
                 <div class="row">
                     <div class="col-xs-12">
@@ -155,42 +217,42 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
                     <div class="js_mainShops">
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-01.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-01.jpg" alt="">
                             </div>
                         </div>
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-02.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-02.jpg" alt="">
                             </div>
                         </div>
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-03.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-03.jpg" alt="">
                             </div>
                         </div>
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-04.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-04.jpg" alt="">
                             </div>
                         </div>
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-01.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-01.jpg" alt="">
                             </div>
                         </div>
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-02.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-02.jpg" alt="">
                             </div>
                         </div>
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-03.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-03.jpg" alt="">
                             </div>
                         </div>
                         <div>
                             <div class="mainShops__item">
-                                <img src="/assets/images/shops/shop-04.jpg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/shops/shop-04.jpg" alt="">
                             </div>
                         </div>
                     </div>
@@ -199,4 +261,4 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
         </div>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>

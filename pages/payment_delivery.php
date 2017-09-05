@@ -1,8 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
 <?php
 $title = 'Оплата и доставка';
-include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
+include(ROOT . '/pages/parts/pageHeader.php') ?>
 
     <div class="pPaymentShipping">
         <div class="container">
@@ -13,24 +15,24 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
                     </h3>
                     <div class="row">
                         <div class="col-xs-12 col-md-6 col-lg-4">
-                            <p class="pPaymentShipping__delivery">
+                            <a href="#modal-payment-shipment-more" class="open-popup-link pPaymentShipping__delivery">
                                 <span class="image">
-                                    <img src="/assets/images/shipping/npost.jpg" alt="">
+                                    <img src="<?php echo HTTP ?>/assets/images/shipping/npost.jpg" alt="">
                                 </span>
                                 <span class="text">
                                     Новая почта
                                 </span>
-                            </p>
+                            </a>
                         </div>
                         <div class="col-xs-12 col-md-6 col-lg-4">
-                            <p class="pPaymentShipping__delivery">
+                            <a href="#modal-payment-shipment-more" class="open-popup-link pPaymentShipping__delivery">
                                 <span class="image">
-                                    <img src="/assets/images/shipping/ukrpost.jpg" alt="">
+                                    <img src="<?php echo HTTP ?>/assets/images/shipping/ukrpost.jpg" alt="">
                                 </span>
                                 <span class="text">
                                     Укрпочта
                                 </span>
-                            </p>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -42,16 +44,24 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
                         </h3>
                         <ul>
                             <li>
-                                <img src="/assets/images/payment/privat.jpg" alt="">
+                                <a href="#modal-payment-shipment-more" class="open-popup-link">
+                                    <img src="<?php echo HTTP ?>/assets/images/payment/privat.jpg" alt="">
+                                </a>
                             </li>
                             <li>
-                                <img src="/assets/images/payment/master.jpg" alt="">
+                                <a href="#modal-payment-shipment-more" class="open-popup-link">
+                                    <img src="<?php echo HTTP ?>/assets/images/payment/master.jpg" alt="">
+                                </a>
                             </li>
                             <li>
-                                <img src="/assets/images/payment/visa.jpg" alt="">
+                                <a href="#modal-payment-shipment-more" class="open-popup-link">
+                                    <img src="<?php echo HTTP ?>/assets/images/payment/visa.jpg" alt="">
+                                </a>
                             </li>
                             <li>
-                                <img src="/assets/images/payment/paypal.jpg" alt="">
+                                <a href="#modal-payment-shipment-more" class="open-popup-link">
+                                    <img src="<?php echo HTTP ?>/assets/images/payment/paypal.jpg" alt="">
+                                </a>
                             </li>
                         </ul>
                     </div>
@@ -61,4 +71,4 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
         </div>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>

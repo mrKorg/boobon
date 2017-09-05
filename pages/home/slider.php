@@ -6,7 +6,7 @@
                 <div class="container">
                     <div class="mainSlider__box">
                         <div class="mainSlider__image">
-                            <img src="/assets/images/boobon.png" alt="">
+                            <img src="<?php echo HTTP ?>/assets/images/boobon.png" alt="">
                         </div>
                         <p class="mainSlider__title">
                             <span class="box">

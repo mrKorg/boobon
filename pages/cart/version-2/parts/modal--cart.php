@@ -8,7 +8,7 @@
                         <?php for ($i = 0; $i < 4; $i++) : ?>
 
                             <div class="mCartPopup__prod">
-                                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-2/parts/productPreview.php') ?>
+                                <?php include(ROOT . '/pages/cart/version-2/parts/productPreview.php') ?>
                             </div>
 
                         <?php endfor; ?>

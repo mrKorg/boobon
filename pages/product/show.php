@@ -1,7 +1,9 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
 <?php
-$products = ['active', 'light', 'cool', 'smile', 'kids', 'crystal'];
+$products = ['active', 'starlight', 'cool', 'smile', 'kids', 'crystal'];
 $product = $products[array_rand($products)];
 ?>
 
@@ -36,7 +38,7 @@ $product = $products[array_rand($products)];
                                     <svg width="194" height="39">
                                         <use xlink:href="#boobon-title"></use>
                                     </svg>
-                                    <img src="/assets/images/products/boobon-<?php echo $product ?>-title.png" alt="">
+                                    <img src="<?php echo HTTP ?>/assets/images/products/boobon-<?php echo $product ?>-title.png" alt="">
                                     */ ?>
                                 </h1>
                                 <p class="pProductInfo__desc">
@@ -197,18 +199,18 @@ $product = $products[array_rand($products)];
                                     <div class="pProductContent__gallery">
                                         <div class="row">
                                             <div class="col-xs-4">
-                                                <a href="/assets/images/placeholder-image.jpg">
-                                                    <img src="/assets/images/placeholder-image.jpg" alt="">
+                                                <a href="<?php echo HTTP ?>/assets/images/placeholder-image.jpg">
+                                                    <img src="<?php echo HTTP ?>/assets/images/placeholder-image.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="col-xs-4">
-                                                <a href="/assets/images/placeholder-image.jpg">
-                                                    <img src="/assets/images/placeholder-image.jpg" alt="">
+                                                <a href="<?php echo HTTP ?>/assets/images/placeholder-image.jpg">
+                                                    <img src="<?php echo HTTP ?>/assets/images/placeholder-image.jpg" alt="">
                                                 </a>
                                             </div>
                                             <div class="col-xs-4">
-                                                <a href="/assets/images/placeholder-image.jpg">
-                                                    <img src="/assets/images/placeholder-image.jpg" alt="">
+                                                <a href="<?php echo HTTP ?>/assets/images/placeholder-image.jpg">
+                                                    <img src="<?php echo HTTP ?>/assets/images/placeholder-image.jpg" alt="">
                                                 </a>
                                             </div>
                                         </div>
@@ -256,8 +258,8 @@ $product = $products[array_rand($products)];
                                         100 мм
                                     </span>
                                 </p>
-                                <img src="/assets/images/products/snowboll-faceted.png" alt="">
-                                <!--<img src="images/products/snowboll-smooth.png" alt="">-->
+                                <img src="<?php echo HTTP ?>/assets/images/products/snowboll-faceted.png" alt="">
+                                <!--<img src="<?php echo HTTP ?>/assets/images/products/snowboll-smooth.png" alt="">-->
                                 <p class="label">
                                     Идеальная
                                     граненая
@@ -270,7 +272,7 @@ $product = $products[array_rand($products)];
                                         500 мм
                                     </span>
                                 </p>
-                                <img src="/assets/images/products/preview.png" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/products/preview.png" alt="">
                             </div>
                         </div>
 
@@ -278,7 +280,7 @@ $product = $products[array_rand($products)];
                 </div>
             </div>
         </div>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/reviews.php') ?>
+        <?php include(ROOT . '/pages/parts/reviews.php') ?>
         <div class="shopsMap">
             <div class="shopsMap__container">
                 <div class="shopsMap__nav">
@@ -322,7 +324,7 @@ $product = $products[array_rand($products)];
                 }
             </script>
         </div>
-        <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/product/parts/otherProducts.php') ?>
+        <?php include(ROOT . '/pages/product/parts/otherProducts.php') ?>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>

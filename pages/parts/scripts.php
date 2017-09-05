@@ -6,7 +6,8 @@
         ms.href = hf;
         document.getElementsByTagName("body")[0].appendChild(ms);
     }
-    loadCSS("/assets/css/app.css");
+    loadCSS("<?php echo HTTP ?>/bower_components/aos/dist/aos.css");
+    loadCSS("<?php echo HTTP ?>/assets/css/app.css");
 </script>
 
 <!-- Load Scripts -->
@@ -14,14 +15,14 @@
     var scr = {
         "scripts": [
             {"src": "https://maps.googleapis.com/maps/api/js?key=AIzaSyC7nl04gTQl-ZBg0gjus9KGEEOKiczTW7o&callback=initMap", "async": true},
-            {"src": "/bower_components/jquery/dist/jquery.min.js", "async": true},
-            {"src": "/bower_components/jquery-migrate/jquery-migrate.min.js", "async": false},
-            {"src": "/bower_components/easydropdown/src/jquery.easydropdown.js", "async": false},
-            {"src": "/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js", "async": false},
-            {"src": "/bower_components/slick-carousel/slick/slick.min.js", "async": false},
-            {"src": "/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js", "async": false},
-            {"src": "/bower_components/aos/dist/aos.js", "async": false},
-            {"src": "/assets/js/app.js", "async": false}
+            {"src": "<?php echo HTTP ?>/bower_components/jquery/dist/jquery.min.js", "async": false},
+            {"src": "<?php echo HTTP ?>/bower_components/jquery-migrate/jquery-migrate.min.js", "async": false},
+            {"src": "<?php echo HTTP ?>/bower_components/easydropdown/src/jquery.easydropdown.js", "async": false},
+            {"src": "<?php echo HTTP ?>/bower_components/perfect-scrollbar/js/perfect-scrollbar.jquery.min.js", "async": false},
+            {"src": "<?php echo HTTP ?>/bower_components/slick-carousel/slick/slick.min.js", "async": false},
+            {"src": "<?php echo HTTP ?>/bower_components/magnific-popup/dist/jquery.magnific-popup.min.js", "async": false},
+            {"src": "<?php echo HTTP ?>/bower_components/aos/dist/aos.js", "async": false},
+            {"src": "<?php echo HTTP ?>/assets/js/app.js", "async": false}
         ]
     };
     !function (t, n, r) {

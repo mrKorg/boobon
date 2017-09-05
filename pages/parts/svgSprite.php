@@ -1,16 +1,16 @@
 <!-- load combined svg file (with symbols) into body-->
 <script>
     (function (doc) {
-        var scripts = doc.getElementsByTagName('script');
-        var script = scripts[scripts.length - 1];
-        var xhr = new XMLHttpRequest();
+        const scripts = doc.getElementsByTagName('script');
+        const script = scripts[scripts.length - 1];
+        const xhr = new XMLHttpRequest();
         xhr.onload = function () {
-            var div = doc.createElement('div');
+            const div = doc.createElement('div');
+            div.classList.add('sprite');
             div.innerHTML = this.responseText;
-            div.style.display = 'none';
             script.parentNode.insertBefore(div, script)
         };
-        xhr.open('get', '/assets/img/sprite.svg', true);
+        xhr.open('get', '<?php echo HTTP ?>/assets/img/sprite.svg', true);
         xhr.send()
     })(document)
 </script>

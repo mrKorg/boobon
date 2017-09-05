@@ -9,11 +9,11 @@
             <div class="js_otherProducts__slider">
                 <?php
                 $delay = 200;
-                $products = ['active', 'light', 'cool', 'smile', 'kids', 'crystal'];
+                $products = ['active', 'starlight', 'cool', 'smile', 'kids', 'crystal'];
                 foreach ($products as $k => $product) : ?>
                     <div>
                         <div class="otherProducts__item">
-                            <?php include ($_SERVER['DOCUMENT_ROOT'] . '/pages/product/parts/preview.php') ?>
+                            <?php include (ROOT . '/pages/product/parts/preview.php') ?>
                         </div>
                     </div>
                 <?php endforeach; ?>

@@ -51,7 +51,7 @@ $opt = true;
                     </div>
                 </div>
                 <div class="col-xs-6">
-                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eColorSelect.php') ?>
+                    <?php include(ROOT . '/pages/cart/parts/eColorSelect.php') ?>
                 </div>
             </div>
         </div>
@@ -68,7 +68,7 @@ $opt = true;
                     </p>
                 </div>
                 <div class="col-xs-6">
-                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eQtySelect.php') ?>
+                    <?php include(ROOT . '/pages/cart/parts/eQtySelect.php') ?>
                 </div>
             </div>
         </div>
@@ -126,10 +126,10 @@ $opt = true;
         <div class="eProductCart__row--cols eProductCart__row--last">
             <div class="row middle-xs">
                 <div class="col-xs-6">
-                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eQtySelect.php') ?>
+                    <?php include(ROOT . '/pages/cart/parts/eQtySelect.php') ?>
                 </div>
                 <div class="col-xs-6">
-                    <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eColorSelect.php') ?>
+                    <?php include(ROOT . '/pages/cart/parts/eColorSelect.php') ?>
                 </div>
             </div>
         </div>

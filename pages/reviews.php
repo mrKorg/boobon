@@ -1,8 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
     <?php
     $title = 'Отзывы';
-    include ($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
+    include (ROOT . '/pages/parts/pageHeader.php') ?>
 
     <div class="pReviews">
         <div class="container">
@@ -14,9 +16,9 @@
                                 <?php
                                 $imageOfReview = false;
                                 if ($imageOfReview) : ?>
-                                    <img src="/assets/images/placeholder-user.png" alt="">
+                                    <img src="<?php echo HTTP ?>/assets/images/placeholder-user.png" alt="">
                                 <?php else : ?>
-                                    <img src="/assets/images/placeholder-user.png" alt="">
+                                    <img src="<?php echo HTTP ?>/assets/images/placeholder-user.png" alt="">
                                 <?php endif; ?>
                             </p>
                             <p class="eReview__name">
@@ -43,4 +45,4 @@
         </div>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>

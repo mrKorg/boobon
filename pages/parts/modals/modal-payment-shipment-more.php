@@ -2,7 +2,7 @@
 
     <div class="payment-shipment">
         <div class="payment-shipment__logo">
-            <img src="/assets/images/paymentShipping/novaposhta.jpg" alt="">
+            <img src="<?php echo HTTP ?>/assets/images/paymentShipping/novaposhta.jpg" alt="">
         </div>
         <div class="payment-shipment__scroll js_scroll">
             <div class="pPopup__content content">

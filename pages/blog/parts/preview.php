@@ -1,11 +1,11 @@
 <div class="eBlogPreview">
     <p class="eBlogPreview__image">
-        <a href="/pages/blog/show.php">
-            <img src="/assets/images/placeholder-blog-preview.jpg" alt="">
+        <a href="<?php echo HTTP ?>/pages/blog/show.php">
+            <img src="<?php echo HTTP ?>/assets/images/placeholder-blog-preview.jpg" alt="">
         </a>
     </p>
     <h5 class="eBlogPreview__title">
-        <a href="/pages/blog/show.php">
+        <a href="<?php echo HTTP ?>/pages/blog/show.php">
            Тестовый заголовок записи блога
         </a>
     </h5>

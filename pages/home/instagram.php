@@ -9,7 +9,7 @@
             <?php for ($i=0; $i < 8; $i++) : ?>
                 <div class="mainInsta__col">
                     <a target="_blank" href="#">
-                        <img src="/assets/images/placeholder-blog-preview.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/placeholder-blog-preview.jpg" alt="">
                     </a>
                 </div>
             <?php endfor; ?>

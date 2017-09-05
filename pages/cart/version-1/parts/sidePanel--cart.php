@@ -12,13 +12,13 @@
         </h3>
         <div class="mCart__list js_scroll">
             <div class="mCart__prod">
-                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-1/parts/productPreview.php') ?>
+                <?php include(ROOT . '/pages/cart/version-1/parts/productPreview.php') ?>
             </div>
             <div class="mCart__prod">
-                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-1/parts/productPreview.php') ?>
+                <?php include(ROOT . '/pages/cart/version-1/parts/productPreview.php') ?>
             </div>
             <div class="mCart__prod">
-                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-1/parts/productPreview.php') ?>
+                <?php include(ROOT . '/pages/cart/version-1/parts/productPreview.php') ?>
             </div>
         </div>
         <div class="mCart__footer">

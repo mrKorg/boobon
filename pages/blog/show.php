@@ -1,8 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
 <?php
 $title = 'Блог';
-include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
+include(ROOT . '/pages/parts/pageHeader.php') ?>
 
     <div class="pArticle">
         <div class="container">
@@ -71,7 +73,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
 
                         <div class="bSideBar__banner">
                             <a href="#" target="_blank">
-                                <img src="/assets/images/banner.svg" alt="">
+                                <img src="<?php echo HTTP ?>/assets/images/banner.svg" alt="">
                             </a>
                         </div>
 
@@ -84,7 +86,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
                             <div class="row">
                                 <?php for ($i = 0; $i < 3; $i++) : ?>
                                     <div class="col-xs-12 col-md-4 col-lg-12">
-                                        <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/blog/parts/preview.php') ?>
+                                        <?php include(ROOT . '/pages/blog/parts/preview.php') ?>
                                     </div>
                                 <?php endfor; ?>
                             </div>
@@ -97,7 +99,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
         </div>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/subscribeFormBig.php') ?>
+<?php include(ROOT . '/pages/parts/subscribeFormBig.php') ?>
 
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>

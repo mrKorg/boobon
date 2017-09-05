@@ -3,17 +3,17 @@
         <div class="js_eProductPreview__slider">
             <div>
                 <div class="eProductPreview__item">
-                    <img src="/assets/images/product/slide1.jpg" alt="">
+                    <img src="<?php echo HTTP ?>/assets/images/product/slide1.jpg" alt="">
                 </div>
             </div>
             <div>
                 <div class="eProductPreview__item">
-                    <img src="/assets/images/product/slide2.jpg" alt="">
+                    <img src="<?php echo HTTP ?>/assets/images/product/slide2.jpg" alt="">
                 </div>
             </div>
             <div>
                 <div class="eProductPreview__item">
-                    <img src="/assets/images/product/slide3.jpg" alt="">
+                    <img src="<?php echo HTTP ?>/assets/images/product/slide3.jpg" alt="">
                 </div>
             </div>
         </div>
@@ -22,7 +22,7 @@
         <h2 class="eProductPreview__title">
             Boobon kids
         </h2>
-        <a href="/pages/product/show.php" class="eProductPreview__image">
+        <a href="<?php echo HTTP ?>/pages/product/show.php" class="eProductPreview__image">
             <span class="body">
                 <!-- Use svg from sprite -->
                 <svg width="178" height="226">
@@ -30,7 +30,7 @@
                 </svg>
                 <!-- or image png -->
                 <?php /*
-                <img src="/assets/images/products/boobon-<?php echo $product?>.png" alt="">
+                <img src="<?php echo HTTP ?><?php echo HTTP ?>/assets/images/products/boobon-<?php echo $product?>.png" alt="">
                 */ ?>
             </span>
             <span class="shadow">
@@ -48,7 +48,7 @@
                 <svg width="194" height="39">
                     <use xlink:href="#boobon-title"></use>
                 </svg>
-                <img src="/assets/images/products/boobon-<?php echo $product ?>-title.png" alt="">
+                <img src="<?php echo HTTP ?><?php echo HTTP ?>/assets/images/products/boobon-<?php echo $product ?>-title.png" alt="">
                 */ ?>
             </span>
         </a>
@@ -56,7 +56,7 @@
             1255 руб
         </p>
         <p class="eProductPreview__btn">
-            <a href="/pages/product/show.php" class="eBtn--pink">
+            <a href="<?php echo HTTP ?>/pages/product/show.php" class="eBtn--pink">
                 Купить
             </a>
         </p>

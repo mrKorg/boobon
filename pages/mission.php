@@ -1,12 +1,14 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
 <?php
 $title = 'Миссия';
-include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
+include(ROOT . '/pages/parts/pageHeader.php') ?>
 
     <div class="pMission">
         <div class="pMission__image">
-            <img src="/assets/images/missionBg.jpg" alt="">
+            <img src="<?php echo HTTP ?>/assets/images/missionBg.jpg" alt="">
         </div>
         <div class="container">
             <div class="row end-md">
@@ -41,4 +43,4 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
         </div>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>

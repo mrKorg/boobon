@@ -9,42 +9,42 @@
             <div class="js_mainShops">
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-01.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-01.jpg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-02.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-02.jpg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-03.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-03.jpg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-04.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-04.jpg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-01.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-01.jpg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-02.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-02.jpg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-03.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-03.jpg" alt="">
                     </div>
                 </div>
                 <div>
                     <div class="mainShops__item">
-                        <img src="/assets/images/shops/shop-04.jpg" alt="">
+                        <img src="<?php echo HTTP ?>/assets/images/shops/shop-04.jpg" alt="">
                     </div>
                 </div>
             </div>

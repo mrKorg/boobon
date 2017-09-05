@@ -91,34 +91,34 @@
             <div class="header__menu">
                 <ul class="menu">
                     <li>
-                        <a href="/pages/product/">
+                        <a href="<?php echo HTTP ?>/pages/product/">
                             все снежколепы
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/mission.php">
+                        <a href="<?php echo HTTP ?>/pages/mission.php">
                             Миссия
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/payment_delivery.php">
+                        <a href="<?php echo HTTP ?>/pages/payment_delivery.php">
                             Оплата и доставка
                         </a>
                     </li>
                 </ul>
                 <ul class="menu">
                     <li>
-                        <a href="/pages/wholesale_customers.php">
+                        <a href="<?php echo HTTP ?>/pages/wholesale_customers.php">
                             Оптовым клиентам
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/blog">
+                        <a href="<?php echo HTTP ?>/pages/blog">
                             Блог
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/contacts.php">
+                        <a href="<?php echo HTTP ?>/pages/contacts.php">
                             Контакты
                         </a>
                     </li>
@@ -126,7 +126,7 @@
             </div>
 
             <div class="header__logo">
-                <a href="/pages/">
+                <a href="<?php echo HTTP ?>/pages/">
                     <svg width="320" height="100">
                         <use xlink:href="#header-logo"></use>
                     </svg>

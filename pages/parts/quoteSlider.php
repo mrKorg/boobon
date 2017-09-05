@@ -8,7 +8,7 @@
                             Спать - это ещё круче чем в кино ходить, потому что билетов не надо!
                         </p>
                         <p class="quoteSlider__image">
-                            <img src="/assets/images/placeholder-user.png" alt="">
+                            <img src="<?php echo HTTP ?>/assets/images/placeholder-user.png" alt="">
                         </p>
                         <p class="quoteSlider__name">
                             Игнат, 5 лет

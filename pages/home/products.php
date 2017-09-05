@@ -87,14 +87,14 @@
             <div class="row">
                 <?php
                 $delay = 200;
-                $products = ['active', 'light', 'cool'];
+                $products = ['active', 'starlight', 'cool'];
                 foreach ($products as $k => $product) : ?>
-                    <div class="col-xs-12 col-lg-6 pCatalog__item <?php echo (count($products) == $k + 1) ? 'last-lg' : '' ?>"> <!-- TODO: return aos data-aos="fade-up" data-aos-delay="< ?php echo $k * 100 + $delay ?>"-->
-                        <?php include ($_SERVER['DOCUMENT_ROOT'] . '/pages/product/parts/preview.php') ?>
+                    <div class="col-xs-12 col-lg-6 pCatalog__item <?php echo (count($products) == $k + 1) ? 'last-lg' : '' ?>">
+                        <?php include (ROOT . '/pages/product/parts/preview.php') ?>
                     </div>
                 <?php endforeach; ?>
 
-                <div class="col-xs-12 col-lg-6" <?php /* data-aos="fade-up" data-aos-delay="500" */ ?>>
+                <div class="col-xs-12 col-lg-6">
 
                     <div class="mainProducts__gadget">
                         <p class="title">Злой монстр <strong>ГАД

@@ -28,16 +28,14 @@
                 <?php for ($i = 0; $i < 2; $i++) : ?>
                     <div class="co-xs-12 col-lg-6">
 
-                        <div class="eReview--white"
-                            <?php //echo ($i == 1) ? 'data-aos="fade-up-left" data-aos-delay="200"' : 'data-aos="fade-up-left"' ?>>
-                            <!-- TODO: return aos -->
+                        <div class="eReview--white">
                             <p class="eReview__image">
                                 <?php
                                 $imageOfReview = false;
                                 if ($imageOfReview) : ?>
-                                    <img src="/assets/images/placeholder-user.png" alt="">
+                                    <img src="<?php echo HTTP ?>/assets/images/placeholder-user.png" alt="">
                                 <?php else : ?>
-                                    <img src="/assets/images/placeholder-user.png" alt="">
+                                    <img src="<?php echo HTTP ?>/assets/images/placeholder-user.png" alt="">
                                 <?php endif; ?>
                             </p>
                             <p class="eReview__name">

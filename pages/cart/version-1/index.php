@@ -1,8 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../../../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
 <?php
 $title = 'Корзина';
-include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
+include(ROOT . '/pages/parts/pageHeader.php') ?>
 
     <div class="pCart1">
         <div class="container">
@@ -16,7 +18,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
 
                                 <div>
                                     <div class="pCart1__prod">
-                                        <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/version-1/parts/productPreview.php') ?>
+                                        <?php include(ROOT . '/pages/cart/version-1/parts/productPreview.php') ?>
                                     </div>
                                 </div>
 
@@ -218,4 +220,4 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
         </div>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>

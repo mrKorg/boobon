@@ -25,7 +25,7 @@
                     <select name="" id="" class="dropdown" data-settings='{"cutOff": 8}'>
                         <option value="">Выберите товар</option>
                         <?php
-                        $products = ['active', 'light', 'cool', 'smile', 'kids', 'crystal'];
+                        $products = ['active', 'starlight', 'cool', 'smile', 'kids', 'crystal'];
                         foreach ($products as $k => $product) : ?>
                             <option value=""><?php echo $product ?></option>
                         <?php endforeach; ?>

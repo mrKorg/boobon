@@ -17,7 +17,7 @@ $opt = false;
         <div class="row middle-xs">
             <div class="col-xs-4">
                 <a href="#" class="eProductCart2__image">
-                    <img src="/assets/images/products/preview.png" alt="">
+                    <img src="<?php echo HTTP ?>/assets/images/products/preview.png" alt="">
                 </a>
             </div>
             <div class="col-xs-8">
@@ -53,7 +53,7 @@ $opt = false;
                     <?php endif ?>
                 </span>
 
-                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eQtySelect.php') ?>
+                <?php include(ROOT . '/pages/cart/parts/eQtySelect.php') ?>
 
             </div>
             <div class="col">
@@ -61,7 +61,7 @@ $opt = false;
                     Цвет:
                 </span>
 
-                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/cart/parts/eColorSelect.php') ?>
+                <?php include(ROOT . '/pages/cart/parts/eColorSelect.php') ?>
 
             </div>
             <div class="col">

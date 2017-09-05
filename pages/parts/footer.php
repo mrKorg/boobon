@@ -41,12 +41,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/payment_delivery.php">
+                        <a href="<?php echo HTTP ?>/pages/payment_delivery.php">
                             Оплата и доставка
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/reviews.php">
+                        <a href="<?php echo HTTP ?>/pages/reviews.php">
                             Отзывы
                         </a>
                     </li>
@@ -58,12 +58,12 @@
                         </a>
                     </li>
                     <li>
-                        <a href="#">
+                        <a href="<?php echo HTTP ?>/pages/wholesale_customers.php">
                             Партнерам
                         </a>
                     </li>
                     <li>
-                        <a href="/pages/contacts.php">
+                        <a href="<?php echo HTTP ?>/pages/contacts.php">
                             Контакты
                         </a>
                     </li>

@@ -1,8 +1,10 @@
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutTop.php') ?>
+<?php include_once("../../config.php"); ?>
+
+<?php include(ROOT . '/pages/parts/layoutTop.php') ?>
 
 <?php
 $title = 'Блог';
-include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
+include(ROOT . '/pages/parts/pageHeader.php') ?>
 
     <div class="pBlog">
         <div class="container">
@@ -21,14 +23,14 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
                     <?php endif ?>
 
                     <div class="col-xs-6 col-lg-3">
-                        <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/blog/parts/preview.php') ?>
+                        <?php include(ROOT . '/pages/blog/parts/preview.php') ?>
                     </div>
 
                     <?php if ($i == 2) : ?>
                         <div class="col-xs-12">
 
                             <div class="pBlog__quoteSlider">
-                                <?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/quoteSlider.php') ?>
+                                <?php include(ROOT . '/pages/parts/quoteSlider.php') ?>
                             </div>
 
                         </div>
@@ -57,7 +59,7 @@ include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/pageHeader.php') ?>
         </div>
     </div>
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/subscribeFormBig.php') ?>
+<?php include(ROOT . '/pages/parts/subscribeFormBig.php') ?>
 
 
-<?php include($_SERVER['DOCUMENT_ROOT'] . '/pages/parts/layoutBottom.php') ?>
+<?php include(ROOT . '/pages/parts/layoutBottom.php') ?>
