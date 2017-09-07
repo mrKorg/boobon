@@ -45,42 +45,77 @@ $product = $products[array_rand($products)];
                                     Снежколеп BOOBON серии FUN - это качественная игрушка с веселым сюжетом. Снежколеп
                                     выпускается в 3-х цветах. Порадуйте себя и своих детей хорошим настроением)
                                 </p>
-                                <p class="pProductInfo__colors js_pProductInfo__colors">
-                                    <a href="#" class="active" style="background: rgb(255, 52, 67);"></a>
-                                    <a href="#" class="" style="background: rgb(0, 16, 174);"></a>
-                                    <a href="#" class="" style="background: rgb(255, 213, 95);"></a>
-                                </p>
-                                <div class="pProductInfo__size">
-                                    <div class="eSizeSelect--black">
-                                        <?php $hasSizes = true; ?>
-                                        <div class="eSizeSelect__val <?php echo ($hasSizes) ? 'eSizeSelect__val--withDrop' : '' ?>">
-                                            <p>Большой</p>
+
+                                <?php
+                                $opt = false;
+                                $hasSizes = true; ?>
+                                <div class="pProductInfo__tools">
+                                    <div class="row">
+                                        <div class="col-xs-6">
+                                            <div class="pProductInfo__size">
+                                                <div class="eSizeSelect--black">
+                                                    <div class="eSizeSelect__val <?php echo ($hasSizes) ? 'eSizeSelect__val--withDrop' : '' ?>">
+                                                        <p>Большой</p>
+                                                    </div>
+                                                    <?php if ($hasSizes) : ?>
+                                                        <div class="eSizeSelect__drop">
+                                                            <p>
+                                                                <a href="#">
+                                                                    Маленький
+                                                                </a>
+                                                            </p>
+                                                            <p>
+                                                                <a href="#">
+                                                                    Большой
+                                                                </a>
+                                                            </p>
+                                                        </div>
+                                                    <?php endif; ?>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <?php if ($hasSizes) : ?>
-                                            <div class="eSizeSelect__drop">
-                                                <p>
-                                                    <a href="#">
-                                                        Маленький
-                                                    </a>
-                                                </p>
-                                                <p>
-                                                    <a href="#">
-                                                        Большой
-                                                    </a>
+                                        <div class="col-xs-6">
+                                            <?php
+                                            $modifier = 'big';
+                                            include(ROOT . '/pages/cart/parts/eColorSelect.php') ?>
+                                        </div>
+                                    </div>
+                                    <div class="row middle-xs center-xs">
+                                        <?php if ($opt) : ?>
+                                            <div class="col-xs-6">
+                                                <p class="pProductInfo__opt">
+                                                    <strong>Ящики</strong> ( 1 = 50 шт )
                                                 </p>
                                             </div>
                                         <?php endif; ?>
+                                        <div class="col-xs-6">
+                                            <?php
+                                            $modifier = 'big';
+                                            include(ROOT . '/pages/cart/parts/eQtySelect.php') ?>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="pProductInfo__row">
-                                    <p class="pProductInfo__price">
-                                        95.00 грн
-                                    </p>
-                                    <p class="pProductInfo__btn">
-                                        <a href="#" class="eBtn--pink eBtn--big">
-                                            Купить позитив
-                                        </a>
-                                    </p>
+
+                                <div class="pProductInfo__row row middle-xs">
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="pProductInfo__price">
+                                            95.00 грн
+                                        </p>
+                                        <?php if ($opt) : ?>
+                                            <p class="pProductInfo__discount">
+                                                <strong>Ваша скидка - 16%</strong>
+                                                Чтобы получить скидку 23%,
+                                                купите еще 3 ящика
+                                            </p>
+                                        <?php endif; ?>
+                                    </div>
+                                    <div class="col-xs-12 col-md-6">
+                                        <p class="pProductInfo__btn">
+                                            <a href="#" class="eBtn--pink eBtn--big">
+                                                Купить позитив
+                                            </a>
+                                        </p>
+                                    </div>
                                 </div>
                                 <p class="pProductInfo__links">
                                     <a href="#buyOneClick-modal" class="pink open-popup-link">

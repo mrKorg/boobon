@@ -2947,39 +2947,50 @@ body
       margin: 0 auto
   @include element(desc)
     opacity: .5
-    margin-bottom: 40px
+    margin-bottom: 30px
     line-height: 1.75
-  @include element(colors)
-    height: 50px
+  @include element(tools)
     margin-bottom: 20px
-    a
-      @include inline-block()
-      width: 50px
-      height: 50px
-      margin: 0 5px
-      border-radius: 50%
-      border: 4px solid transparent
-      &.red
-        background: $productRed
-        border-color: $productRed
-      &.blue
-        background: $productBlue
-        border-color: $productBlue
-      &.yellow
-        background: $productYellow
-        border-color: $productYellow
-      &.active, &:hover
-        border-color: $black
-  @include element(size)
-    margin-bottom: 20px
+    & > .row
+      padding-top: 10px
+      padding-bottom: 10px
+      text-align: center !important
+      &:first-child
+        border-bottom: 1px solid rgba($black, .3)
+        margin-bottom: 5px
+        & > div
+          &:first-child
+            border-right: 1px solid rgba($black, .3)
+  @include element(opt)
+    font-size: 14px
+    strong
+      @include xs()
+        display: block
+  @include element(row)
+    text-align: center
+    @media (min-width: $md)
+      margin-bottom: 40px
+    @include xs()
+      margin-bottom: 20px
   @include element(price)
     font-size: 20px
     font-weight: 700
-    margin-bottom: 20px
-    @media (min-width: $md)
-      margin-right: 40px
+  @include element(discount)
+    max-width: 170px
+    margin: 0 auto
+    text-align: center
+    font-size: 12px
+    font-weight: 300
+    color: rgba($black, .5)
+    line-height: 1.2
+    strong
+      color: $black
+      font-size: 14px
+      display: block
+      padding: 7px 0 5px
   @include element(btn)
-    margin-bottom: 30px
+    @include xs()
+      padding-top: 20px
   @include element(links)
     a
       margin: 0 15px
@@ -2993,18 +3004,7 @@ body
       &:hover
         text-decoration: none
         opacity: .5
-  @include element(row)
-    @media (min-width: $md)
-      display: flex
-      flex-direction: row
-      flex-wrap: wrap
-      justify-content: center
-      align-content: center
-      align-items: center
-      & > *
-        order: 0
-        flex: 0 1 auto
-        align-self: auto
+
 
 .pProductContent
   @media (max-width: $md-top)
@@ -3467,6 +3467,9 @@ body
     color: $white
   @include modifier(black)
     color: $black
+  @include modifier(big)
+    color: $black
+    padding: 6px 35px
   @include inline-block()
   @include element(val)
     font-weight: 700
@@ -3476,8 +3479,12 @@ body
     height: 20px
     @media (min-width: $md)
       font-size: 14px
+      .eQtySelect--big &
+        font-size: 18px
     @include xs()
       font-size: 12px
+      .eQtySelect--big &
+        font-size: 14px
   @include element(btn)
     border-radius: 50%
     width: 20px
@@ -3485,6 +3492,10 @@ body
     margin-top: -10px
     position: absolute
     top: 50%
+    .eQtySelect--big &
+      width: 25px
+      height: 25px
+      margin-top: -12.5px
     svg
       display: block
       transition: all .3s ease
@@ -3494,6 +3505,11 @@ body
       .eQtySelect--black &
         fill: rgba($black, .5)
         stroke: $white
+      .eQtySelect--big &
+        width: 25px
+        height: 25px
+        fill: rgba($black, .5)
+        stroke: $white
     &:hover
       svg
         fill: $pink
@@ -3501,7 +3517,8 @@ body
         .eQtySelect--white &
           fill: $pink
           stroke: $white
-        .eQtySelect--black &
+        .eQtySelect--black &,
+        .eQtySelect--big &
           fill: $black
           stroke: $white
     @include modifier(minus)
@@ -3519,6 +3536,11 @@ body
   @include modifier(black)
     .eColorSelect__label
       display: none
+  @include modifier(big)
+    .eColorSelect__label
+      font-size: 16px
+      font-weight: 500
+      padding-right: 10px
   @include element(val)
     color: inherit
     line-height: 20px
@@ -3530,6 +3552,10 @@ body
       font-size: 14px
     @include xs()
       font-size: 12px
+    .eColorSelect--big &
+      padding-right: 0
+      height: 25px
+      line-height: 25px
     &::after
       content: ''
       width: 7.5px
@@ -3563,6 +3589,16 @@ body
           box-shadow: 0 0 0 1px $productBlue
         &.yellow
           box-shadow: 0 0 0 1px $productYellow
+      .eColorSelect--big &
+        width: 25px
+        height: 25px
+        border: 2px solid $white
+        &.red
+          box-shadow: 0 0 0 1px $productRed
+        &.blue
+          box-shadow: 0 0 0 1px $productBlue
+        &.yellow
+          box-shadow: 0 0 0 1px $productYellow
   @include element(drop)
     display: none
     @include position(absolute, 40px, null, null, null, 10)
@@ -3578,6 +3614,10 @@ body
       @include xs()
         left: 4.5px
     .eColorSelect--black &
+      left: 50%
+      margin-left: -63.5px
+      box-shadow: 0 2px 20px rgba($black, .2)
+    .eColorSelect--big &
       left: 50%
       margin-left: -63.5px
       box-shadow: 0 2px 20px rgba($black, .2)

@@ -2,7 +2,7 @@
     <div class="eQtySelect__val">
         <p>
             <span>3</span>
-            шт
+            <?php echo (isset($opt) && $opt) ? 'ящ' : 'шт' ?>
         </p>
     </div>
     <a href="#" class="eQtySelect__btn--minus">
