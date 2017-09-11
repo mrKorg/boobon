@@ -16,18 +16,18 @@
 
 
 // Show SidePanel Cart
-let body = document.getElementsByTagName('body')[0];
-let headerCartBtn = document.getElementById('js_header__cart');
+var body = document.getElementsByTagName('body')[0];
+var headerCartBtn = document.getElementById('js_header__cart');
 if (headerCartBtn) {
     headerCartBtn.onclick = function (e) {
         body.className += ' openSidePanelCart';
         e.preventDefault();
     };
 }
-let shadowForClose = document.getElementsByClassName('js_wrapper__bg'),
+var shadowForClose = document.getElementsByClassName('js_wrapper__bg'),
     cartForClose = document.getElementsByClassName('js_mCart__close'),
     closeModalElements = [].concat(Array.prototype.slice.call(shadowForClose), Array.prototype.slice.call(cartForClose));
-for (let key = 0; key < closeModalElements.length; key++) {
+for (var key = 0; key < closeModalElements.length; key++) {
     if (closeModalElements.hasOwnProperty(key)) {
         closeModalElements[key].onclick = function (e) {
             body.classList.remove('openSidePanelCart');
@@ -37,14 +37,14 @@ for (let key = 0; key < closeModalElements.length; key++) {
 }
 
 // Check method
-let methodBtns = document.getElementsByClassName('js_checkBtn');
-for (let key = 0; key < methodBtns.length; key++) {
+var methodBtns = document.getElementsByClassName('js_checkBtn');
+for (var key = 0; key < methodBtns.length; key++) {
     if (methodBtns.hasOwnProperty(key)) {
-        let input = methodBtns[key].children[0];
+        var input = methodBtns[key].children[0];
         if (input.checked) methodBtns[key].className += 'active';
         input.onchange = function (e) {
-            let other = document.getElementsByName(input.getAttribute('name'));
-            for (let i = 0; i < other.length; i++) {
+            var other = document.getElementsByName(input.getAttribute('name'));
+            for (var i = 0; i < other.length; i++) {
                 if (other.hasOwnProperty(i)) other[i].parentNode.classList.remove('active');
             }
             (input.checked) ? this.parentNode.classList.add('active') : this.parentNode.classList.remove('active');
@@ -53,10 +53,10 @@ for (let key = 0; key < methodBtns.length; key++) {
 }
 
 // Custom Checkbox
-let checkBoxes = document.getElementsByClassName('eCheckBox');
-for (let key = 0; key < checkBoxes.length; key++) {
+var checkBoxes = document.getElementsByClassName('eCheckBox');
+for (var key = 0; key < checkBoxes.length; key++) {
     if (checkBoxes.hasOwnProperty(key)) {
-        let input = checkBoxes[key].children[0];
+        var input = checkBoxes[key].children[0];
         if (input.checked) checkBoxes[key].className += 'active';
         input.onclick = function (e) {
             this.parentNode.classList.toggle('active');
@@ -65,17 +65,17 @@ for (let key = 0; key < checkBoxes.length; key++) {
 }
 
 // Custom Checkbox
-let radioBoxes = document.getElementsByClassName('eRadioBox');
-for (let key = 0; key < radioBoxes.length; key++) {
+var radioBoxes = document.getElementsByClassName('eRadioBox');
+for (var key = 0; key < radioBoxes.length; key++) {
     if (radioBoxes.hasOwnProperty(key)) {
-        let input = radioBoxes[key].children[0];
+        var input = radioBoxes[key].children[0];
         if (input.checked) radioBoxes[key].className += 'active';
         input.onclick = function (e) {
             this.parentNode.classList.toggle('active');
         };
         input.onchange = function (e) {
-            let other = document.getElementsByName(input.getAttribute('name'));
-            for (let i = 0; i < other.length; i++) {
+            var other = document.getElementsByName(input.getAttribute('name'));
+            for (var i = 0; i < other.length; i++) {
                 if (other.hasOwnProperty(i)) other[i].parentNode.classList.remove('active');
             }
             (input.checked) ? this.parentNode.classList.add('active') : this.parentNode.classList.remove('active');
@@ -92,7 +92,7 @@ $(document).ready(function () {
     $('#page-preloader .spinner').fadeOut('slow');
 
     // Reset on resize
-    let windowWidth = $(window).width();
+    var windowWidth = $(window).width();
     $(window).resize(function () {
         if (windowWidth != $(window).width()) {
             $('body').removeClass('openMenu openMenuDesktop');
@@ -101,10 +101,10 @@ $(document).ready(function () {
     });
 
     // Sticky
-    let header = $('.header');
-    let wrapper = $('.wrapper');
-    let scrollOffset = 100;
-    let isEnableFixedHeader = false;
+    var header = $('.header');
+    var wrapper = $('.wrapper');
+    var scrollOffset = 100;
+    var isEnableFixedHeader = false;
 
     function enableFixedHeader() {
         isEnableFixedHeader = ($(window).height() + header.innerHeight() * 2 + scrollOffset) < wrapper.innerHeight();
@@ -170,7 +170,7 @@ $(document).ready(function () {
     });
     $(window).resize(function () {
         if (window.matchMedia('(min-width: 1200px)').matches) {
-            let currentSlide = $('.js_mainSlider').slick('slickCurrentSlide');
+            var currentSlide = $('.js_mainSlider').slick('slickCurrentSlide');
             console.log(currentSlide);
             $('.js_mainSlider').find('.slick-dots').css({
                 'transform': 'translateX(-' + (currentSlide * (40 + 18)) + 'px)'
@@ -254,7 +254,7 @@ $(document).ready(function () {
     });
 
     // Product head slider
-    let productSlider = $('.js_pProductSlider').slick({
+    var productSlider = $('.js_pProductSlider').slick({
         dots: false,
         arrows: false,
         infinite: true,
@@ -309,7 +309,7 @@ $(document).ready(function () {
 
     // Product preview slider
     $('.js_eProductPreview__slider').each(function () {
-        let slider = $(this).slick({
+        var slider = $(this).slick({
             dots: false,
             arrows: false,
             infinite: true,
@@ -339,7 +339,7 @@ $(document).ready(function () {
         $('.pProductSize__nav a').not($(this)).removeClass('active')
         $('.pProductSize').removeClass('standart small');
         $(this).addClass('active');
-        let className = $(this).data('size');
+        var className = $(this).data('size');
         $('.pProductSize').addClass(className);
         $('.js_size').each(function () {
             $(this).text($(this).data(className));
