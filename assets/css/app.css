@@ -2493,6 +2493,9 @@ img {
 .textCenter {
   text-align: center; }
 
+svg {
+  max-height: 100%; }
+
 @font-face {
   font-family: 'Gilroy';
   src: url("../fonts/Gilroy-Lite/Gilroy-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/Gilroy-Lite/Gilroy-Light.otf") format("opentype"), url("../fonts/Gilroy-Lite/Gilroy-Light.woff") format("woff"), url("../fonts/Gilroy-Lite/Gilroy-Light.ttf") format("truetype"), url("../fonts/Gilroy-Lite/Gilroy-Light.svg#Gilroy-Light") format("svg");
@@ -11872,7 +11875,7 @@ body {
       @media (max-width: 767px) {
         .eProductPreview__image .title svg {
           width: 82px;
-          height: 16px; }
+          height: 32px; }
         .eProductPreview__image .title img {
           width: 82px; } }
   .eProductPreview__price {
