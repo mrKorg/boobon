@@ -15048,4 +15048,45 @@ input.hasError {
          -o-transform: translateY(0);
             transform: translateY(0); }
 
+.pNotFound {
+  padding-top: 20px;
+  padding-bottom: 20px; }
+  .pNotFound__box {
+    background: url("../img/404-bg.svg") no-repeat center/contain;
+    min-height: 70vh;
+    padding-top: 20px;
+    padding-bottom: 20px; }
+  .pNotFound__img {
+    display: block;
+    max-width: 100%;
+    height: auto; }
+    @media (min-width: 1500px) {
+      .pNotFound__img {
+        margin: 0 auto 50px; } }
+    @media (min-width: 1200px) and (max-width: 1499px) {
+      .pNotFound__img {
+        margin: 0 auto 40px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .pNotFound__img {
+        margin: 0 auto 30px; } }
+    @media (max-width: 767px) {
+      .pNotFound__img {
+        margin: 0 auto 20px; } }
+  .pNotFound__text {
+    text-align: center; }
+    @media (min-width: 1500px) {
+      .pNotFound__text {
+        margin-bottom: 80px; } }
+    @media (min-width: 1200px) and (max-width: 1499px) {
+      .pNotFound__text {
+        margin-bottom: 80px; } }
+    @media (min-width: 768px) and (max-width: 1199px) {
+      .pNotFound__text {
+        margin-bottom: 60px; } }
+    @media (max-width: 767px) {
+      .pNotFound__text {
+        margin-bottom: 40px; } }
+  .pNotFound p {
+    text-align: center; }
+
 /*# sourceMappingURL=app.css.map */

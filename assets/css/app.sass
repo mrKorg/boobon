@@ -5140,3 +5140,36 @@ input.hasError
   &.active
     opacity: 1
     transform: translateY(0)
+// 404
+.pNotFound
+  padding-top: 20px
+  padding-bottom: 20px
+  @include element(box)
+    background: url("../img/404-bg.svg") no-repeat center / contain
+    min-height: 70vh
+    padding-top: 20px
+    padding-bottom: 20px
+  @include element(img)
+    display: block
+    max-width: 100%
+    height: auto
+    @include xl()
+      margin: 0 auto 50px
+    @include lg()
+      margin: 0 auto 40px
+    @include md()
+      margin: 0 auto 30px
+    @include xs()
+      margin: 0 auto 20px
+  @include element(text)
+    text-align: center
+    @include xl()
+      margin-bottom: 80px
+    @include lg()
+      margin-bottom: 80px
+    @include md()
+      margin-bottom: 60px
+    @include xs()
+      margin-bottom: 40px
+  p
+    text-align: center
