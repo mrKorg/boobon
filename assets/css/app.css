@@ -14648,21 +14648,29 @@ body {
     .modalMessage__img .image .shadow {
       opacity: .15; }
   .modalMessage__text {
-    font-weight: 700;
     line-height: 1.2; }
     @media (min-width: 1200px) {
       .modalMessage__text {
-        font-size: 20px;
         margin-bottom: 60px; } }
     @media (max-width: 1199px) {
       .modalMessage__text {
-        font-size: 16px;
         margin-bottom: 40px; } }
-    .modalMessage__text p {
-      font-size: inherit !important;
-      margin-bottom: 0 !important;
-      font-weight: inherit !important;
-      color: inherit !important; }
+    .modalMessage__text h3 {
+      font-weight: 700; }
+      @media (min-width: 1200px) {
+        .modalMessage__text h3 {
+          font-size: 46px;
+          margin-bottom: 30px; } }
+      @media (max-width: 1199px) {
+        .modalMessage__text h3 {
+          font-size: 36px;
+          margin-bottom: 20px; } }
+    @media (min-width: 1200px) {
+      .modalMessage__text p {
+        font-size: 20px; } }
+    @media (max-width: 1199px) {
+      .modalMessage__text p {
+        font-size: 16px; } }
   .modalMessage__btn .eBtn, .modalMessage__btn .eBtn--disabled, .modalMessage__btn .eBtn--pink, .modalMessage__btn .eBtn--pinkBorder, .modalMessage__btn .eBtn--black, .modalMessage__btn .eBtn--white, .modalMessage__btn .eBtn--blue, .modalMessage__btn .eBtn--big, .modalMessage__btn .eBtn--xl {
     min-width: 200px; }
 

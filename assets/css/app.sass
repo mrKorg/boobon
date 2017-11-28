@@ -4840,19 +4840,24 @@ body
       .shadow
         opacity: .15
   @include element(text)
-    font-weight: 700
     line-height: 1.2
     @media (min-width: $lg)
-      font-size: 20px
       margin-bottom: 60px
     @media (max-width: $md-top)
-      font-size: 16px
       margin-bottom: 40px
+    h3
+      font-weight: 700
+      @media (min-width: $lg)
+        font-size: 46px
+        margin-bottom: 30px
+      @media (max-width: $md-top)
+        font-size: 36px
+        margin-bottom: 20px
     p
-      font-size: inherit !important
-      margin-bottom: 0 !important
-      font-weight: inherit !important
-      color: inherit !important
+      @media (min-width: $lg)
+        font-size: 20px
+      @media (max-width: $md-top)
+        font-size: 16px
   @include element(btn)
     .eBtn
       min-width: 200px

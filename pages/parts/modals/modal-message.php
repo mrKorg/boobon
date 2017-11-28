@@ -3,7 +3,7 @@
     <div class="pPopup__content">
         <div class="modalMessage">
 
-            <?php $content = 'review' ?>
+            <?php $content = 'error' ?>
             <?php if ($content == 'error') : ?>
 
                 <div class="modalMessage__img">
@@ -12,8 +12,8 @@
                     </svg>
                 </div>
                 <div class="modalMessage__text">
-                    <p>К сожалению оплата не прошла.</p>
-                    <p>Что-то пошло не так</p>
+                    <h3>Упс...</h3>
+                    <p>Скорей всего что-то пошло не так и ваш платеж не прошел. Свяжитесь, пожалуйста, с вашим банком!</p>
                 </div>
                 <div class="modalMessage__btn">
                     <a href="#" class="eBtn eBtn--pink eBtn--big">
