@@ -12,14 +12,31 @@ $product = $products[array_rand($products)];
             <div class="pProduct__slider">
                 <div class="pProductSlider">
                     <div class="js_pProductSlider">
-                        <div class="pProductSlider__item" style="background: rgb(255, 52, 67);"></div>
-                        <div class="pProductSlider__item" style="background: rgb(0, 16, 174);"></div>
-                        <div class="pProductSlider__item" style="background: rgb(255, 213, 95);"></div>
+                        <div class="pProductSlider__item" style="background: #573325;">
+                            <div class="container">
+                                <p class="pProductSlider__img">
+                                    <img src="<?php echo HTTP ?>/assets/images/productSlider/demo-slide-1.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pProductSlider__item" style="background: #573325;">
+                            <div class="container">
+                                <p class="pProductSlider__img">
+                                    <img src="<?php echo HTTP ?>/assets/images/productSlider/demo-slide-2.png" alt="">
+                                </p>
+                            </div>
+                        </div>
+                        <div class="pProductSlider__item" style="background: #573325;">
+                            <div class="container">
+                                <p class="pProductSlider__img">
+                                    <img src="<?php echo HTTP ?>/assets/images/productSlider/demo-slide-3.png" alt="">
+                                </p>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="pProduct__info">
-
                 <div class="container">
                     <div class="row center-xs end-lg">
                         <div class="col">

@@ -1,18 +1,17 @@
-(function(){
+(function () {
 
     var config = {
         reset: true,
-        viewFactor : 0.15,
-        duration   : 800,
-        distance   : "0px",
-        scale      : 0.8,
+        viewFactor: 0.15,
+        duration: 800,
+        distance: "0px",
+        scale: 0.8,
     };
 
     window.sr = new ScrollReveal(config);
     sr.reveal('.animateElement');
     document.documentElement.classList.add('sr');
 })();
-
 
 
 // Show SidePanel Cart
@@ -254,15 +253,17 @@ $(document).ready(function () {
     });
 
     // Product head slider
-    var productSlider = $('.js_pProductSlider').slick({
+    var slickVar = {
         dots: false,
         arrows: false,
         infinite: true,
         speed: 500,
         fade: true,
-        autoplay: false,
+        autoplay: true,
         autoplaySpeed: 2000
-    });
+    };
+    var productSlider = $('.js_pProductSlider').slick(slickVar);
+    var width = $(window).width();
     $('.js_pProductInfo__colors').on('click', 'a', function (e) {
         $('.js_pProductInfo__colors a').not(this).removeClass('active');
         $(this).addClass('active');
@@ -274,6 +275,13 @@ $(document).ready(function () {
         $('.pProductSlider__item').height($('.pProduct__slider').height());
     }
 
+    $(window).resize(function () {
+        if (width !== $(window).width()) {
+            $('.js_pProductSlider').slick('unslick');
+            $('.js_pProductSlider').slick(slickVar);
+            setProductSliderHeight();
+        }
+    });
     setProductSliderHeight();
 
     // Other products

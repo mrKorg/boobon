@@ -2879,11 +2879,13 @@ body
   @include element(header)
     position: relative
   @include element(slider)
-    @include position(absolute, 0, 0, 0, 0, 1)
+    @media (min-width: $lg)
+      @include position(absolute, 0, 0, 0, 0, 1)
   @include element(info)
-    position: relative
-    z-index: 5
-    padding: 80px 0
+    @media (min-width: $lg)
+      padding: 80px 0
+    @media (max-width: $md-top)
+      padding-bottom: 40px
   @include element(content)
     @media (min-width: $lg)
       padding: 80px 0
@@ -2899,11 +2901,35 @@ body
       background: linear-gradient(to bottom, $productBlue 0%, darken($productBlue, 20%) 100%)
     &.yellow
       background: linear-gradient(to bottom, $productYellow 0%, darken($productYellow, 20%) 100%)
+    .container
+      height: 100%
+  @include element(img)
+    padding-top: 20px
+    padding-bottom: 20px
+    height: 100%
+    display: flex
+    flex-direction: column
+    flex-wrap: wrap
+    justify-content: center
+    align-content: stretch
+    align-items: center
+    @media (min-width: $lg)
+      padding-right: 545px
+    img
+      display: block
+      margin: 0 auto
+      @media (min-width: $lg)
+        max-height: 750px
+      @media (max-width: $md-top)
+        max-height: 350px
 
 .pProductInfo
   background: $white
-  box-shadow: 0 0 4px rgba($blue, .5)
   text-align: center
+  position: relative
+  z-index: 5
+  @media (min-width: $lg)
+    box-shadow: 0 0 4px rgba($blue, .5)
   @media (min-width: $md)
     max-width: 545px
     padding: 50px 50px 30px
