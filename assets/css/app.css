@@ -11958,7 +11958,6 @@ body {
 
 .pProductSlider__img {
   padding-top: 20px;
-  padding-bottom: 20px;
   height: 100%;
   display: -webkit-box;
   display: -webkit-flex;
@@ -11990,7 +11989,8 @@ body {
           align-items: center; }
   @media (min-width: 1200px) {
     .pProductSlider__img {
-      padding-right: 545px; } }
+      padding-right: 545px;
+      padding-bottom: 20px; } }
   .pProductSlider__img img {
     display: block;
     margin: 0 auto; }
